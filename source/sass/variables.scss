@@ -1,6 +1,9 @@
 // Colors
 // ---------------------------------
 
+$color-text-white:                  #F9FBFD;
+$color-text-black:                  #011C40;
+
 // Default
 
 $color-default-black:               #000000;
@@ -27,7 +30,7 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-placeholder:                    "Montserrat", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -56,3 +59,10 @@ $vp-1920:                           1920px;
 
 $retina-dpi:                        144dpi;
 $retina-dppx:                       1.5dppx;
+
+// Padding
+// ---------------------------------
+
+$desktop-padding:                   103px;
+$tablet-padding:                    45px;
+$mobile-padding:                    15px;
