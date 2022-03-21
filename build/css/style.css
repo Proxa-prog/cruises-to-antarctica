@@ -663,6 +663,13 @@ button,
   pointer-events: none;
 }
 
+.cruise-catalog__button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background-color: #F9FBFD;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -779,6 +786,7 @@ button,
   margin: 0 auto;
   background-image: url("../../img/content/backgrond_header_desktop.jpg");
   background-repeat: no-repeat;
+  background-color: #3475C5;
   background-size: cover;
   background-position: center;
   min-width: 1366px;
@@ -1051,6 +1059,145 @@ button,
   background-repeat: no-repeat;
 }
 
+.cruise-catalog {
+  min-height: 1123px;
+  text-align: center;
+}
+
+.cruise-catalog__wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 120px 0 90px;
+}
+
+.cruise-catalog__list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cruise-catalog__item {
+  width: 260px;
+  min-height: 386px;
+  text-align: left;
+  background-color: #3475C5;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #F9FBFD;
+  position: relative;
+}
+
+.cruise-catalog__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.cruise-catalog__item dl {
+  display: none;
+}
+
+.cruise-catalog__item button {
+  display: none;
+}
+
+.cruise-catalog__item dt {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.cruise-catalog__item dd {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #D8D8D9;
+}
+
+.cruise-catalog__item h3 {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.cruise-catalog__item:hover {
+  padding: 35px 25px;
+  background-color: #011C40;
+}
+
+.cruise-catalog__item:hover img {
+  display: none;
+}
+
+.cruise-catalog__item:hover dl {
+  display: inline;
+  font-weight: 400;
+}
+
+.cruise-catalog__item:hover dd {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.cruise-catalog__item:hover h3 {
+  position: static;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.cruise-catalog__item:hover button {
+  display: block;
+}
+
+.cruise-catalog__elaine {
+  padding: 35px 25px;
+  background-color: #011C40;
+}
+
+.cruise-catalog__elaine img {
+  display: none;
+}
+
+.cruise-catalog__elaine dl {
+  display: inline;
+  font-weight: 400;
+}
+
+.cruise-catalog__elaine dd {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.cruise-catalog__elaine h3 {
+  position: static;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.cruise-catalog__elaine button {
+  display: block;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1204,6 +1351,16 @@ button,
   .advantages__zodiac::before {
     width: 38px;
     height: 13px;
+  }
+
+  .cruise-catalog__wrapper {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+
+  .cruise-catalog__item {
+    width: 309px;
+    height: 386px;
   }
 }
 
@@ -1493,6 +1650,18 @@ button,
   .advantages__zodiac::before {
     width: 38px;
     height: 13px;
+  }
+
+  .cruise-catalog__wrapper {
+    padding-top: 65px;
+    padding-bottom: 35px;
+  }
+
+  .cruise-catalog__item {
+    width: 270px;
+    height: 386px;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
