@@ -18,7 +18,6 @@
       width: 42px;
       height: 22px;
     }
-
   }
 
   @include vp-767 {
@@ -72,7 +71,7 @@
 
     &::before {
       position: absolute;
-      top: 0px;
+      top: 0;
       right: 6px;
       content: "";
       width: 2px;
@@ -82,14 +81,14 @@
     }
 
     &::after {
-    position: absolute;
-    top: 0px;
-    right: 6px;
-    content: "";
-    width: 2px;
-    height: 15px;
-    transform: rotate(-45deg);
-    background-color: $color-text-black;
+      position: absolute;
+      top: 0;
+      right: 6px;
+      content: "";
+      width: 2px;
+      height: 15px;
+      transform: rotate(-45deg);
+      background-color: $color-text-black;
     }
   }
 }
@@ -110,7 +109,7 @@
 
     &::before {
       position: absolute;
-      top: 0px;
+      top: 0;
       right: 6px;
       content: "";
       width: 24px;
@@ -119,5 +118,4 @@
       box-shadow: 0 5px 0 $color-text-white, 0 10px 0 $color-text-white;
     }
   }
-
 }
