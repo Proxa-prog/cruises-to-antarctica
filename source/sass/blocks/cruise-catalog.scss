@@ -48,8 +48,13 @@
     display: none;
   }
 
-  button {
+  a {
     display: none;
+    text-align: center;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
   }
 
   dt {
@@ -102,8 +107,8 @@
       margin-bottom: 25px;
     }
 
-    button {
-      display: block;
+    a {
+      display: inline-block;
     }
   }
 
@@ -147,7 +152,14 @@
     margin-bottom: 25px;
   }
 
-  button {
+  .cruise-catalog__button {
     display: block;
   }
+}
+
+.cruise-catalog__button {
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  background-color: $color-text-white;
 }

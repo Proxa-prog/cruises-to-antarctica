@@ -27,10 +27,10 @@
           <button class="nav__button" type="button"></button>
 
           <ul class="header__nav-list nav-list">
-            <li class="header__nav-item nav-list__item"><a href="">Преимущества</a></li>
-            <li class="header__nav-item nav-list__item"><a href="">Направления</a></li>
-            <li class="header__nav-item nav-list__item"><a href="">Ближайшие круизы</a></li>
-            <li class="header__nav-item nav-list__item"><a href="">Контакты</a></li>
+            <li class="header__nav-item nav-list__item"><a href="#advantages-link">Преимущества</a></li>
+            <li class="header__nav-item nav-list__item"><a href="#description-link">Направления</a></li>
+            <li class="header__nav-item nav-list__item"><a href="#cruise-catalog-link">Ближайшие круизы</a></li>
+            <li class="header__nav-item nav-list__item"><a href="#contact-link">Контакты</a></li>
           </ul>
         </nav>
 
@@ -44,7 +44,7 @@
   <main>
 
 
-    <section class="description">
+    <section class="description" id="description-link">
       <div class="container">
         <div class="description__wrapper">
           <div class="description__text-block">
@@ -58,17 +58,23 @@
 
           <div class="description__img-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1024px)"
+              <!-- 1x: 560px, 2x 1120px -->
+              <source type="image/webp" media="(min-width: 1366px)"
                 srcset="img/content/penguins_desktop.webp 1x, img/content/penguins_desktop@2x.webp 2x">
+                <!-- 1x: 324px, 2x 648px -->
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/content/penguins_tablet.webp 1x, img/content/penguins_tablet@2x.webp 2x">
+                <!-- 1x: 290px, 2x 580px -->
               <source type="image/webp"
                 srcset="img/content/penguins_mobile.webp 1x, img/content/penguins_mobile@2x.webp 2x">
 
-              <source media="(min-width: 1024px)"
+                <!-- 1x: 560px, 2x 1120px -->
+              <source media="(min-width: 1366px)"
                 srcset="img/content/penguins_desktop.jpg 1x, img/content/penguins_desktop@2x.jpg 2x">
+                <!-- 1x: 324px, 2x 648px -->
               <source media="(min-width: 768px)"
                 srcset="img/content/penguins_tablet.jpg 1x, img/content/penguins_tablet@2x.jpg 2x">
+                <!-- 1x: 290px, 2x 580px -->
               <img src="img/content/penguins_desktop.jpg" srcset="img/content/penguins_desktop@2x.jpg" width="290"
                 height="186" alt="Три пингвина">
             </picture>
@@ -78,7 +84,7 @@
     </section>
 
 
-    <section class="advantages">
+    <section class="advantages" id="advantages-link">
       <div class="container">
         <div class="advantages__wrapper">
           <h2>Преимущества</h2>
@@ -108,7 +114,7 @@
     </section>
 
 
-    <form class="cruise-catalog" method="post" action="#">
+    <section class="cruise-catalog" id="cruise-catalog-link">
       <div class="container">
         <div class="cruise-catalog__wrapper">
           <h2>Ближайшие круизы</h2>
@@ -118,13 +124,24 @@
               <h3>Круиз “Астория”</h3>
 
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/content/astoria_desktop.webp 1x, img/content/astoria_desktop@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/content/astoria_desktop.webp 1x, img/content/astoria_desktop@2x.webp 2x">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/astoria_desktop.webp 1x, img/content/astoria_desktop@2x.webp 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/astoria_desktop.webp 1x, img/content/astoria_desktop@2x.webp 2x">
+                   <!-- 1x: 270px, 2x 540px -->
                 <source srcset="img/content/astoria_desktop.webp 1x, img/content/astoria_desktop@2x.webp 2x">
 
-                <source media="(min-width: 1366px)" srcset="img/content/astoria_desktop.jpg 1x, img/content/astoria_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/content/astoria_tablet.jpg 1x, img/content/astoria_tablet@2x.jpg 2x">
-                <img src="img/content/astoria_mobile.jpg" srcset="img/content/astoria_mobile.jpg@2x.jpg" width="260" height="386" alt="Ледник на фоне двойного пика">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/astoria_desktop.jpg 1x, img/content/astoria_desktop@2x.jpg 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/astoria_tablet.jpg 1x, img/content/astoria_tablet@2x.jpg 2x">
+                   <!-- 1x: 270px, 2x 540px -->
+                <img src="img/content/astoria_mobile.jpg" srcset="img/content/astoria_mobile.jpg@2x.jpg" width="270"
+                  height="386" alt="Ледник на фоне двойного пика">
               </picture>
 
               <dl>
@@ -135,13 +152,13 @@
                 <dd>Ушуайя</dd>
 
                 <dt>Продолжительность</dt>
-                <dd>11  дней</dd>
+                <dd>11 дней</dd>
 
                 <dt>Цена</dt>
                 <dd>от 11500 &#36;</dd>
               </dl>
 
-              <button class="cruise-catalog__button" type="button">Забронировать</button>
+              <a class="cruise-catalog__button">Забронировать</a>
             </li>
             <li class="cruise-catalog__item cruise-catalog__elaine">
               <h3>Круиз “Элайн”</h3>
@@ -160,19 +177,30 @@
                 <dd>от 14500 &#36;</dd>
               </dl>
 
-              <button class="cruise-catalog__button" type="button">Забронировать</button>
+              <a class="cruise-catalog__button">Забронировать</a>
             </li>
             <li class="cruise-catalog__item cruise-catalog__atlantis">
               <h3>Круиз “Атлантис”</h3>
 
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/content/atlantis_desktop.webp 1x, img/content/atlantis_desktop@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/content/atlantis_tablet.webp 1x, img/content/atlantis_tablet@2x.webp 2x">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/atlantis_desktop.webp 1x, img/content/atlantis_desktop@2x.webp 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/atlantis_tablet.webp 1x, img/content/atlantis_tablet@2x.webp 2x">
+                   <!-- 1x: 270px, 2x 540px -->
                 <source srcset="img/content/atlantis_mobile.webp 1x, img/content/atlantis_mobile@2x.webp 2x">
 
-                <source media="(min-width: 1366px)" srcset="img/content/atlantis_desktop.jpg 1x, img/content/atlantis_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/content/atlantis_tablet.jpg 1x, img/content/atlantis_tablet@2x.jpg 2x">
-                <img src="img/content/atlantis_mobile.jpg" srcset="img/content/atlantis_mobile.jpg@2x.jpg" width="260" height="386" alt="Глыбы льда в свободном плаванье">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/atlantis_desktop.jpg 1x, img/content/atlantis_desktop@2x.jpg 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/atlantis_tablet.jpg 1x, img/content/atlantis_tablet@2x.jpg 2x">
+                  <!-- 1x: 270px, 2x 540px -->
+                <img src="img/content/atlantis_mobile.jpg" srcset="img/content/atlantis_mobile.jpg@2x.jpg" width="270"
+                  height="386" alt="Глыбы льда в свободном плаванье">
               </picture>
 
               <dl>
@@ -189,19 +217,30 @@
                 <dd>от 14500 &#36;</dd>
               </dl>
 
-              <button class="cruise-catalog__button" type="button">Забронировать</button>
+              <a class="cruise-catalog__button">Забронировать</a>
             </li>
             <li class="cruise-catalog__item cruise-catalog__odysseus">
               <h3>Круиз “Одиссей”</h3>
 
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/content/odysseus_desktop.webp 1x, img/content/odysseus_desktop@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/content/odysseus_tablet.webp 1x, img/content/odysseus_tablet@2x.webp 2x">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/odysseus_desktop.webp 1x, img/content/odysseus_desktop@2x.webp 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/odysseus_tablet.webp 1x, img/content/odysseus_tablet@2x.webp 2x">
+                   <!-- 1x: 270px, 2x 540px -->
                 <source srcset="img/content/odysseus_mobile.webp 1x, img/content/odysseus_mobile@2x.webp 2x">
 
-                <source media="(min-width: 1366px)" srcset="img/content/odysseus_desktop.jpg 1x, img/content/odysseus_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/content/odysseus_tablet.jpg 1x, img/content/odysseus_tablet@2x.jpg 2x">
-                <img src="img/content/odysseus_mobile.jpg" srcset="img/content/odysseus_mobile.jpg@2x.jpg" width="260" height="386" alt="Глыбы льда в свободном плаванье">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/odysseus_desktop.jpg 1x, img/content/odysseus_desktop@2x.jpg 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/odysseus_tablet.jpg 1x, img/content/odysseus_tablet@2x.jpg 2x">
+                  <!-- 1x: 270px, 2x 540px -->
+                <img src="img/content/odysseus_mobile.jpg" srcset="img/content/odysseus_mobile.jpg@2x.jpg" width="270"
+                  height="386" alt="Глыбы льда в свободном плаванье">
               </picture>
 
               <dl>
@@ -218,19 +257,30 @@
                 <dd>от 9700 &#36;</dd>
               </dl>
 
-              <button class="cruise-catalog__button" type="button">Забронировать</button>
+              <a class="cruise-catalog__button">Забронировать</a>
             </li>
             <li class="cruise-catalog__item cruise-catalog__olimpia">
               <h3>Круиз “Олимпия”</h3>
 
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/content/olimpia_desktop.webp 1x, img/content/olimpia_desktop@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/content/olimpia_tablet.webp 1x, img/content/olimpia_tablet@2x.webp 2x">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/olimpia_desktop.webp 1x, img/content/olimpia_desktop@2x.webp 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/olimpia_tablet.webp 1x, img/content/olimpia_tablet@2x.webp 2x">
+                  <!-- 1x: 270px, 2x 540px -->
                 <source srcset="img/content/olimpia_mobile.webp 1x, img/content/olimpia_mobile@2x.webp 2x">
 
-                <source media="(min-width: 1366px)" srcset="img/content/olimpia_desktop.jpg 1x, img/content/olimpia_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/content/olimpia_tablet.jpg 1x, img/content/olimpia_tablet@2x.jpg 2x">
-                <img src="img/content/olimpia_mobile.jpg" srcset="img/content/olimpia_mobile.jpg@2x.jpg" width="260" height="386" alt="Пингвины на фоне исполинского ледника">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/olimpia_desktop.jpg 1x, img/content/olimpia_desktop@2x.jpg 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/olimpia_tablet.jpg 1x, img/content/olimpia_tablet@2x.jpg 2x">
+                  <!-- 1x: 270px, 2x 540px -->
+                <img src="img/content/olimpia_mobile.jpg" srcset="img/content/olimpia_mobile.jpg@2x.jpg" width="270"
+                  height="386" alt="Пингвины на фоне исполинского ледника">
               </picture>
 
               <dl>
@@ -247,19 +297,30 @@
                 <dd>от 18600 &#36;</dd>
               </dl>
 
-              <button class="cruise-catalog__button" type="button">Забронировать</button>
+              <a class="cruise-catalog__button">Забронировать</a>
             </li>
             <li class="cruise-catalog__item cruise-catalog__aurora">
               <h3>Круиз “Аврора”</h3>
 
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/content/aurora_desktop.webp 1x, img/content/aurora_desktop@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/content/aurora_tablet.webp 1x, img/content/aurora_tablet@2x.webp 2x">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/aurora_desktop.webp 1x, img/content/aurora_desktop@2x.webp 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/aurora_tablet.webp 1x, img/content/aurora_tablet@2x.webp 2x">
+                  <!-- 1x: 270px, 2x 540px -->
                 <source srcset="img/content/aurora_mobile.webp 1x, img/content/aurora_mobile@2x.webp 2x">
 
-                <source media="(min-width: 1366px)" srcset="img/content/aurora_desktop.jpg 1x, img/content/aurora_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/content/aurora_tablet.jpg 1x, img/content/aurora_tablet@2x.jpg 2x">
-                <img src="img/content/aurora_mobile.jpg" srcset="img/content/aurora_mobile.jpg@2x.jpg" width="260" height="386" alt="Пейзаж с высоты птичьего полёта">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/aurora_desktop.jpg 1x, img/content/aurora_desktop@2x.jpg 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/aurora_tablet.jpg 1x, img/content/aurora_tablet@2x.jpg 2x">
+                  <!-- 1x: 270px, 2x 540px -->
+                <img src="img/content/aurora_mobile.jpg" srcset="img/content/aurora_mobile.jpg@2x.jpg" width="270"
+                  height="386" alt="Пейзаж с высоты птичьего полёта">
               </picture>
 
               <dl>
@@ -276,19 +337,30 @@
                 <dd>от 11700 &#36;</dd>
               </dl>
 
-              <button class="cruise-catalog__button" type="button">Забронировать</button>
+              <a class="cruise-catalog__button">Забронировать</a>
             </li>
             <li class="cruise-catalog__item cruise-catalog__leonor">
               <h3>Круиз “Леонор”</h3>
 
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/content/leonor_desktop.webp 1x, img/content/leonor_desktop@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/content/leonor_tablet.webp 1x, img/content/leonor_tablet@2x.webp 2x">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/leonor_desktop.webp 1x, img/content/leonor_desktop@2x.webp 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/leonor_tablet.webp 1x, img/content/leonor_tablet@2x.webp 2x">
+                  <!-- 1x: 270px, 2x 540px -->
                 <source srcset="img/content/leonor_mobile.webp 1x, img/content/leonor_mobile@2x.webp 2x">
 
-                <source media="(min-width: 1366px)" srcset="img/content/leonor_desktop.jpg 1x, img/content/leonor_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/content/leonor_tablet.jpg 1x, img/content/leonor_tablet@2x.jpg 2x">
-                <img src="img/content/leonor_mobile.jpg" srcset="img/content/leonor_mobile.jpg@2x.jpg" width="260" height="386" alt="Пейзаж с высоты птичьего полёта">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/leonor_desktop.jpg 1x, img/content/leonor_desktop@2x.jpg 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/leonor_tablet.jpg 1x, img/content/leonor_tablet@2x.jpg 2x">
+                  <!-- 1x: 270px, 2x 540px -->
+                <img src="img/content/leonor_mobile.jpg" srcset="img/content/leonor_mobile.jpg@2x.jpg" width="270"
+                  height="386" alt="Пейзаж с высоты птичьего полёта">
               </picture>
 
               <dl>
@@ -305,19 +377,29 @@
                 <dd>от 12500 &#36;</dd>
               </dl>
 
-              <button class="cruise-catalog__button" type="button">Забронировать</button>
+              <a class="cruise-catalog__button">Забронировать</a>
             </li>
             <li class="cruise-catalog__item cruise-catalog__minion">
               <h3>Круиз “Минион - 1”</h3>
 
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/content/minion_desktop.webp 1x, img/content/minion_desktop@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/content/minion_tablet.webp 1x, img/content/minion_tablet@2x.webp 2x">
+                <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/minion_desktop.webp 1x, img/content/minion_desktop@2x.webp 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/minion_tablet.webp 1x, img/content/minion_tablet@2x.webp 2x">
                 <source srcset="img/content/minion_mobile.webp 1x, img/content/minion_mobile@2x.webp 2x">
 
-                <source media="(min-width: 1366px)" srcset="img/content/minion_desktop.jpg 1x, img/content/minion_desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/content/minion_tablet.jpg 1x, img/content/minion_tablet@2x.jpg 2x">
-                <img src="img/content/minion_mobile.jpg" srcset="img/content/minion_mobile.jpg@2x.jpg" width="260" height="386" alt="Пейзаж с высоты птичьего полёта">
+                  <!-- 1x: 260px, 2x 520px -->
+                <source media="(min-width: 1366px)"
+                  srcset="img/content/minion_desktop.jpg 1x, img/content/minion_desktop@2x.jpg 2x">
+                  <!-- 1x: 309px, 2x 618px -->
+                <source media="(min-width: 768px)"
+                  srcset="img/content/minion_tablet.jpg 1x, img/content/minion_tablet@2x.jpg 2x">
+                  <!-- 1x: 270px, 2x 540px -->
+                <img src="img/content/minion_mobile.jpg" srcset="img/content/minion_mobile.jpg@2x.jpg" width="270"
+                  height="386" alt="Пейзаж с высоты птичьего полёта">
               </picture>
 
               <dl>
@@ -334,12 +416,44 @@
                 <dd>от 12300 &#36;</dd>
               </dl>
 
-              <button class="cruise-catalog__button" type="button">Забронировать</button>
+              <a class="cruise-catalog__button button">Забронировать</a>
             </li>
           </ul>
         </div>
       </div>
-    </form>
+    </section>
+
+    <section class="early-booking">
+      <div class="container">
+        <div class="early-booking__wrapper">
+          <div class="early-booking__text-wrapper">
+            <h3>Раннее бронирование</h3>
+
+            <p>Забронируйте тур<br class="early-booking__text-space"> за 3-6 месяцев<br>
+              до даты выезда и сэкономьте до 50%</p>
+          </div>
+
+          <div class="early-booking__form-field">
+            <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+
+            <label for="user-name">Имя</label>
+            <input type="name" id="user-name" placeholder="Имя">
+
+            <label for="user-phone">Телефон</label>
+            <input type="tel" id="user-phone" placeholder="Телефон">
+
+            <label for="user-email">Email</label>
+            <input type="email" id="user-email" placeholder="Email">
+
+            <input type="checkbox" id="user-consent">
+            <label for="user-consent">Я согласен на обработку моих персональных данных</label>
+
+            <button type="submit">Оставить заявку</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
   </main>
   <footer class="footer">
