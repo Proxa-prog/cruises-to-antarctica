@@ -8,10 +8,10 @@
   <meta name="description" content="Описание проекта">
   <title>Круизы в Антарктику</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-semi-bold.woff2" as="font">
+  <link rel="preload" href="fonts/montserrat-bold.woff2" as="font">
 </head>
 
 <body>
@@ -433,7 +433,7 @@
               до даты выезда и сэкономьте до 50%</p>
           </div>
 
-          <div class="early-booking__form-field">
+          <form class="early-booking__form-field" action="#" method="post">
             <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
 
             <label for="user-name">Имя</label>
@@ -449,7 +449,7 @@
             <label for="user-consent">Я согласен на обработку моих персональных данных</label>
 
             <button type="submit">Оставить заявку</button>
-          </div>
+          </form>
 
         </div>
       </div>
@@ -485,10 +485,10 @@
         </svg>
 
         <ul class="footer__list-nav nav-list">
-          <li class="footer__list-nav-item nav-list__item"><a href="">Преимущества</a></li>
-          <li class="footer__list-nav-item nav-list__item"><a href="">Направления</a></li>
-          <li class="footer__list-nav-item nav-list__item"><a href="">Ближайшие круизы</a></li>
-          <li class="footer__list-nav-item nav-list__item"><a href="">Контакты</a></li>
+          <li class="footer__list-nav-item nav-list__item"><a href="#advantages-link">Преимущества</a></li>
+          <li class="footer__list-nav-item nav-list__item"><a href="#description-link">Направления</a></li>
+          <li class="footer__list-nav-item nav-list__item"><a href="#cruise-catalog-link">Ближайшие круизы</a></li>
+          <li class="footer__list-nav-item nav-list__item"><a href="#contact-link">Контакты</a></li>
         </ul>
 
         <div class="footer__social">
@@ -508,8 +508,8 @@
     </div>
   </footer>
 
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
+  <script src="js/vendor.js" type="module"></script>
+  <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

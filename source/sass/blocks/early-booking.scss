@@ -1,29 +1,29 @@
 .early-booking {
   min-height: 616px;
-  background-image: url("../../img/content/background_booking_desktop.jpg");
+  background-image: url("../img/content/background_booking_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   @include retina {
-    background-image: url("../../img/content/background_booking_desktop@2x.jpg");
+    background-image: url("../img/content/background_booking_desktop@2x.jpg");
   }
 
   @include vp-1366 {
     min-height: 805px;
-    background-image: url("../../img/content/background_booking_tablet.jpg");
+    background-image: url("../img/content/background_booking_tablet.jpg");
 
     @include retina {
-      background-image: url("../../img/content/background_booking_tablet@2x.jpg");
+      background-image: url("../img/content/background_booking_tablet@2x.jpg");
     }
   }
 
   @include vp-767 {
     min-height: 805px;
-    background-image: url("../../img/content/background_booking_mobile.jpg");
+    background-image: url("../img/content/background_booking_mobile.jpg");
 
     @include retina {
-      background-image: url("../../img/content/background_booking_mobile@2x.jpg");
+      background-image: url("../img/content/background_booking_mobile@2x.jpg");
     }
   }
 }
@@ -161,7 +161,7 @@
       position: absolute;
       width: 17px;
       height: 13px;
-      background-image: url("../../img/svg/ok.svg");
+      background-image: url("../img/svg/ok.svg");
       background-repeat: no-repeat;
       left: -20px;
       bottom: -1px;
