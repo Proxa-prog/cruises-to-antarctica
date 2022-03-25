@@ -22,13 +22,13 @@
 }
 
 .contacts__map {
-  background-image: url("../../img/content/map_desktop.png");
+  background-image: url("../img/content/map_desktop.png");
   width: 560px;
   height: 306px;
   position: relative;
 
   @include vp-1366 {
-    background-image: url("../../img/content/map_tablet.png");
+    background-image: url("../img/content/map_tablet.png");
     width: 324px;
     height: 335px;
 
@@ -72,7 +72,7 @@
       position: absolute;
       width: 18px;
       height: 22px;
-      background-image: url("../../img/svg/mark.svg");
+      background-image: url("../img/svg/mark.svg");
       background-repeat: no-repeat;
       left: -29px;
     }
@@ -87,7 +87,7 @@
       position: absolute;
       width: 18px;
       height: 18px;
-      background-image: url("../..//img/svg/phone.svg");
+      background-image: url("..//img/svg/phone.svg");
       background-repeat: no-repeat;
       left: -29px;
     }

@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: "Montserrat";
   font-display: swap;
-  src: local("Montserrat"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 500;
   font-family: "Montserrat";
   font-display: swap;
-  src: local("Montserrat"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 600;
   font-family: "Montserrat";
   font-display: swap;
-  src: local("Montserrat"), url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-semi-bold.woff2") format("woff2"), url("../fonts/montserrat-semi-bold.woff") format("woff");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-weight: 700;
   font-family: "Montserrat";
   font-display: swap;
-  src: local("Montserrat"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
 }
 
 *,
@@ -1161,7 +1161,7 @@ template {
 
 .header {
   margin: 0 auto;
-  background-image: url("../../img/content/backgrond_header_desktop.jpg");
+  background-image: url("../img/content/backgrond_header_desktop.jpg");
   background-repeat: no-repeat;
   background-color: #3475c5;
   background-size: cover;
@@ -1330,7 +1330,7 @@ template {
 }
 
 .advantages {
-  background-image: url("../../img/content/background_advantages_desktop.jpg");
+  background-image: url("../img/content/background_advantages_desktop.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1401,7 +1401,7 @@ template {
   content: "";
   width: 27px;
   height: 32px;
-  background-image: url("../../img/svg/ship.svg");
+  background-image: url("../img/svg/ship.svg");
   background-size: contain;
   top: -42px;
   background-repeat: no-repeat;
@@ -1416,7 +1416,7 @@ template {
   content: "";
   width: 38px;
   height: 21px;
-  background-image: url("../../img/svg/double_ok.svg");
+  background-image: url("../img/svg/double_ok.svg");
   background-size: contain;
   top: -42px;
   background-repeat: no-repeat;
@@ -1431,7 +1431,7 @@ template {
   content: "";
   width: 45px;
   height: 15px;
-  background-image: url("../../img/svg/boat.svg");
+  background-image: url("../img/svg/boat.svg");
   background-size: contain;
   top: -42px;
   background-repeat: no-repeat;
@@ -1547,6 +1547,7 @@ template {
 
 .cruise-catalog__item:hover a {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .cruise-catalog__elaine {
@@ -1590,7 +1591,7 @@ template {
 
 .early-booking {
   min-height: 616px;
-  background-image: url("../../img/content/background_booking_desktop.jpg");
+  background-image: url("../img/content/background_booking_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1694,7 +1695,7 @@ template {
   position: absolute;
   width: 17px;
   height: 13px;
-  background-image: url("../../img/svg/ok.svg");
+  background-image: url("../img/svg/ok.svg");
   background-repeat: no-repeat;
   left: -20px;
   bottom: -1px;
@@ -1729,7 +1730,7 @@ template {
 }
 
 .contacts__map {
-  background-image: url("../../img/content/map_desktop.png");
+  background-image: url("../img/content/map_desktop.png");
   width: 560px;
   height: 306px;
   position: relative;
@@ -1761,7 +1762,7 @@ template {
   position: absolute;
   width: 18px;
   height: 22px;
-  background-image: url("../../img/svg/mark.svg");
+  background-image: url("../img/svg/mark.svg");
   background-repeat: no-repeat;
   left: -29px;
 }
@@ -1776,7 +1777,7 @@ template {
   position: absolute;
   width: 18px;
   height: 18px;
-  background-image: url("../..//img/svg/phone.svg");
+  background-image: url("..//img/svg/phone.svg");
   background-repeat: no-repeat;
   left: -29px;
 }
@@ -1807,7 +1808,7 @@ template {
   .header {
     min-width: 768px;
     min-height: 638px;
-    background-image: url("../../img/content/backgrond_header_tablet.jpg");
+    background-image: url("../img/content/backgrond_header_tablet.jpg");
   }
 
   .nav svg {
@@ -1886,7 +1887,7 @@ template {
 
 @media (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1439px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1439px) and (min-resolution: 144dpi), (max-width: 1439px) and (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../../img/content/backgrond_header_tablet@2x.jpg");
+    background-image: url("../img/content/backgrond_header_tablet@2x.jpg");
   }
 }
 
@@ -1952,7 +1953,7 @@ template {
 
   .early-booking {
     min-height: 805px;
-    background-image: url("../../img/content/background_booking_tablet.jpg");
+    background-image: url("../img/content/background_booking_tablet.jpg");
   }
 
   .early-booking__wrapper {
@@ -1986,7 +1987,7 @@ template {
   }
 
   .contacts__map {
-    background-image: url("../../img/content/map_tablet.png");
+    background-image: url("../img/content/map_tablet.png");
     width: 324px;
     height: 335px;
   }
@@ -2013,7 +2014,7 @@ template {
 
 @media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1365px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1365px) and (min-resolution: 144dpi), (max-width: 1365px) and (min-resolution: 1.5dppx) {
   .early-booking {
-    background-image: url("../../img/content/background_booking_tablet@2x.jpg");
+    background-image: url("../img/content/background_booking_tablet@2x.jpg");
   }
 }
 
@@ -2077,7 +2078,7 @@ template {
   .header {
     min-width: 320px;
     min-height: 500px;
-    background-image: url("../../img/content/backgrond_header_mobile.jpg");
+    background-image: url("../img/content/backgrond_header_mobile.jpg");
   }
 
   .header__active {
@@ -2319,7 +2320,7 @@ template {
 
   .early-booking {
     min-height: 805px;
-    background-image: url("../../img/content/background_booking_mobile.jpg");
+    background-image: url("../img/content/background_booking_mobile.jpg");
   }
 
   .early-booking__wrapper {
@@ -2417,20 +2418,20 @@ template {
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../../img/content/backgrond_header_mobile@2x.jpg");
+    background-image: url("../img/content/backgrond_header_mobile@2x.jpg");
   }
 
   .early-booking {
-    background-image: url("../../img/content/background_booking_mobile@2x.jpg");
+    background-image: url("../img/content/background_booking_mobile@2x.jpg");
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .header {
-    background-image: url("../../img/content/backgrond_header_desktop@2x.jpg");
+    background-image: url("../img/content/backgrond_header_desktop@2x.jpg");
   }
 
   .early-booking {
-    background-image: url("../../img/content/background_booking_desktop@2x.jpg");
+    background-image: url("../img/content/background_booking_desktop@2x.jpg");
   }
 }

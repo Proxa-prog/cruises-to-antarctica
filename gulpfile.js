@@ -33,7 +33,7 @@ const css = () => {
 };
 
 const js = () => {
-  return gulp.src(['source/js/main.js'])
+  return gulp.src(['source/js/**/*.js'])
       .pipe(webpackStream(webpackConfig))
       .pipe(gulp.dest('build/js'))
 };
@@ -119,7 +119,7 @@ const createWebp = () => {
     .pipe(gulp.dest(`source/img/${root}`));
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp);
+const build = gulp.series(clean, svgo, copy, css, sprite, js);
 
 const start = gulp.series(build, syncServer);
 
