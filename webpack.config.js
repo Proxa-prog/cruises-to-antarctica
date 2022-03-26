@@ -14,7 +14,7 @@ module.exports = {
   },
   devtool: isDev ? 'source-map' : false,
   output: {
-    filename: '[name].js',
+    filename: '[name].min.js',
     path: path.resolve(__dirname, 'build/js'),
   },
   optimization: {
