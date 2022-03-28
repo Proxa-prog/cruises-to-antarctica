@@ -126,38 +126,6 @@
   }
 }
 
-.cruise-catalog__elaine {
-  padding: 35px 25px;
-  background-color: $color-dark-blue;
-
-  img {
-    display: none;
-  }
-
-  dl {
-    display: inline;
-    font-weight: 400;
-  }
-
-  dd {
-    margin: 0;
-    margin-bottom: 12px;
-  }
-
-  h3 {
-    position: static;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-    margin: 0;
-    margin-bottom: 25px;
-  }
-
-  .cruise-catalog__button {
-    display: block;
-  }
-}
-
 .cruise-catalog__button {
   width: 100%;
   min-height: 40px;
