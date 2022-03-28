@@ -1550,38 +1550,6 @@ template {
   vertical-align: middle;
 }
 
-.cruise-catalog__elaine {
-  padding: 35px 25px;
-  background-color: #011c40;
-}
-
-.cruise-catalog__elaine img {
-  display: none;
-}
-
-.cruise-catalog__elaine dl {
-  display: inline;
-  font-weight: 400;
-}
-
-.cruise-catalog__elaine dd {
-  margin: 0;
-  margin-bottom: 12px;
-}
-
-.cruise-catalog__elaine h3 {
-  position: static;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  margin: 0;
-  margin-bottom: 25px;
-}
-
-.cruise-catalog__elaine .cruise-catalog__button {
-  display: block;
-}
-
 .cruise-catalog__button {
   width: 100%;
   min-height: 40px;
