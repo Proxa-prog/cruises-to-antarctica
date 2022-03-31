@@ -21,13 +21,16 @@
       <div class="header__inner">
         <nav class="header__nav nav is-open">
 
-          <svg width="42" height="22" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite/sprite.svg#site-logo"></use>
-          </svg>
+          <a href="index.html">
+            <svg width="42" height="22" viewBox="0 0 70 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="img/sprite/sprite.svg#site-logo"></use>
+            </svg>
+          </a>
+
 
           <button class="nav__button" type="button"></button>
 
-          <ul class="header__nav-list nav-list">
+          <ul class="header__nav-list nav-list nav-list--closed">
             <li class="header__nav-item nav-list__item"><a href="#advantages-link">Преимущества</a></li>
             <li class="header__nav-item nav-list__item"><a href="#description-link">Направления</a></li>
             <li class="header__nav-item nav-list__item"><a href="#cruise-catalog-link">Ближайшие круизы</a></li>
@@ -76,7 +79,7 @@
               <source media="(min-width: 768px)"
                 srcset="img/content/penguins_tablet.jpg 1x, img/content/penguins_tablet@2x.jpg 2x">
                 <!-- 1x: 290px, 2x 580px -->
-              <img src="img/content/penguins_desktop.jpg" srcset="img/content/penguins_desktop@2x.jpg" width="290"
+              <img src="img/content/penguins_mobile.jpg" srcset="img/content/penguins_mobile@2x.jpg" width="290"
                 height="186" alt="Три пингвина">
             </picture>
           </div>
@@ -92,21 +95,21 @@
 
           <ul class="advantages__list">
             <li class="advantages__item">
-              <h3 class="advantages__a-cruise-ship">Небольшой круизный лайнер</h3>
+              <h3 class="advantages__a-cruise-ship">Небольшой<br> круизный лайнер</h3>
 
-              <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст
+              <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей,<br> поможет избежать шума<br> и очередей и даст
                 возможность насладиться видами и природой.</p>
             </li>
-            <li class="advantages__item">
-              <h3 class="advantages__all-inclusive">Система все включено</h3>
+            <li class="advantages__item advantages__item-all-inclusive">
+              <h3 class="advantages__all-inclusive">Система<br> все включено</h3>
 
-              <p>Все наши круизы работают
-                по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
+              <p>Все наши круизы работают<br>
+                по системе “Все Включено”.<br> Великолепные блюда<br class="advantages__item-all-inclusive-br2"> и безлимитный бар доступны<br  class="advantages__item-all-inclusive-br2"> для вас<br class="advantages__all-inclusive-br-tablet advantages__item-all-inclusive-br3"> 24 часа.</p>
             </li>
-            <li class="advantages__item">
-              <h3 class="advantages__zodiac">Экскурсионные туры на Zodiac</h3>
+            <li class="advantages__item advantages__item-zodiac">
+              <h3 class="advantages__zodiac">Экскурсионные<br> туры на Zodiac</h3>
 
-              <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении
+              <p>Экскурсионные туры к берегам Антарктиды совершаются<br class="advantages__item-zodiac-br-0"> на оборудованных лодках<br class="advantages__item-zodiac-br-1"> типа<br> Zodiac в сопровождении<br>
                 опытных экскурсоводов.</p>
             </li>
           </ul>
@@ -121,7 +124,7 @@
           <h2>Ближайшие круизы</h2>
 
           <ul class="cruise-catalog__list">
-            <li class="cruise-catalog__item cruise-catalog__astoria">
+            <li class="cruise-catalog__item cruise-catalog__astoria" tabindex="0">
               <h3>Круиз “Астория”</h3>
 
               <picture>
@@ -159,9 +162,9 @@
                 <dd>от 11500 &#36;</dd>
               </dl>
 
-              <a class="cruise-catalog__button">Забронировать</a>
+              <a class="cruise-catalog__button" href="#early-booking-anchor">Забронировать</a>
             </li>
-            <li class="cruise-catalog__item">
+            <li class="cruise-catalog__item" tabindex="0">
               <h3>Круиз “Элайн”</h3>
 
               <picture>
@@ -199,9 +202,9 @@
                 <dd>от 14500 &#36;</dd>
               </dl>
 
-              <a class="cruise-catalog__button">Забронировать</a>
+              <a class="cruise-catalog__button" href="#early-booking-anchor">Забронировать</a>
             </li>
-            <li class="cruise-catalog__item cruise-catalog__atlantis">
+            <li class="cruise-catalog__item cruise-catalog__atlantis" tabindex="0">
               <h3>Круиз “Атлантис”</h3>
 
               <picture>
@@ -239,9 +242,9 @@
                 <dd>от 14500 &#36;</dd>
               </dl>
 
-              <a class="cruise-catalog__button">Забронировать</a>
+              <a class="cruise-catalog__button" href="#early-booking-anchor">Забронировать</a>
             </li>
-            <li class="cruise-catalog__item cruise-catalog__odysseus">
+            <li class="cruise-catalog__item cruise-catalog__odysseus" tabindex="0">
               <h3>Круиз “Одиссей”</h3>
 
               <picture>
@@ -279,9 +282,9 @@
                 <dd>от 9700 &#36;</dd>
               </dl>
 
-              <a class="cruise-catalog__button">Забронировать</a>
+              <a class="cruise-catalog__button" href="#early-booking-anchor">Забронировать</a>
             </li>
-            <li class="cruise-catalog__item cruise-catalog__olimpia">
+            <li class="cruise-catalog__item cruise-catalog__olimpia" tabindex="0">
               <h3>Круиз “Олимпия”</h3>
 
               <picture>
@@ -319,9 +322,9 @@
                 <dd>от 18600 &#36;</dd>
               </dl>
 
-              <a class="cruise-catalog__button">Забронировать</a>
+              <a class="cruise-catalog__button" href="#early-booking-anchor">Забронировать</a>
             </li>
-            <li class="cruise-catalog__item cruise-catalog__aurora">
+            <li class="cruise-catalog__item cruise-catalog__aurora" tabindex="0">
               <h3>Круиз “Аврора”</h3>
 
               <picture>
@@ -359,9 +362,9 @@
                 <dd>от 11700 &#36;</dd>
               </dl>
 
-              <a class="cruise-catalog__button">Забронировать</a>
+              <a class="cruise-catalog__button" href="#early-booking-anchor">Забронировать</a>
             </li>
-            <li class="cruise-catalog__item cruise-catalog__leonor">
+            <li class="cruise-catalog__item cruise-catalog__leonor" tabindex="0">
               <h3>Круиз “Леонор”</h3>
 
               <picture>
@@ -399,9 +402,9 @@
                 <dd>от 12500 &#36;</dd>
               </dl>
 
-              <a class="cruise-catalog__button">Забронировать</a>
+              <a class="cruise-catalog__button" href="#early-booking-anchor">Забронировать</a>
             </li>
-            <li class="cruise-catalog__item cruise-catalog__minion">
+            <li class="cruise-catalog__item cruise-catalog__minion" tabindex="0">
               <h3>Круиз “Минион - 1”</h3>
 
               <picture>
@@ -438,7 +441,7 @@
                 <dd>от 12300 &#36;</dd>
               </dl>
 
-              <a class="cruise-catalog__button button">Забронировать</a>
+              <a class="cruise-catalog__button button" href="#early-booking-anchor">Забронировать</a>
             </li>
           </ul>
         </div>
@@ -448,7 +451,7 @@
     <section class="early-booking">
       <div class="container">
         <div class="early-booking__wrapper">
-          <div class="early-booking__text-wrapper">
+          <div class="early-booking__text-wrapper" id="early-booking-anchor">
             <h3>Раннее бронирование</h3>
 
             <p>Забронируйте тур<br class="early-booking__text-space"> за 3-6 месяцев<br>
@@ -456,19 +459,19 @@
           </div>
 
           <form class="early-booking__form-field" action="#" method="post">
-            <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+            <p>Оставьте заявку<br class="early-booking__form-field-br"> и мы свяжемся с вами<br class="early-booking__form-field-br"> в ближайшее время</p>
 
             <label for="user-name">Имя</label>
             <input type="text" id="user-name" placeholder="Имя" required>
 
             <label for="user-phone">Телефон</label>
-            <input type="tel" id="user-phone" placeholder="Телефон" required>
+            <input type="number" id="user-phone" placeholder="Телефон" required>
 
             <label for="user-email">Email</label>
             <input type="email" id="user-email" placeholder="Email" required>
 
-            <input type="checkbox" id="user-consent">
-            <label for="user-consent">Я согласен на обработку моих персональных данных</label>
+            <input type="checkbox" id="user-consent" required>
+            <label for="user-consent" tabindex="0">Я согласен на обработку<br> моих персональных данных</label>
 
             <button type="submit">Оставить заявку</button>
           </form>
@@ -501,10 +504,13 @@
     <div class="container">
 
       <section class="footer__nav">
-        <svg class="logo-footer" width="42" height="22" viewBox="0 0 70 38" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite/sprite.svg#site-logo"></use>
-        </svg>
+
+        <a href="index.html">
+          <svg class="logo-footer" width="42" height="22" viewBox="0 0 70 38" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite/sprite.svg#site-logo"></use>
+          </svg>
+        </a>
 
         <ul class="footer__list-nav nav-list">
           <li class="footer__list-nav-item nav-list__item"><a href="#advantages-link">Преимущества</a></li>
@@ -514,15 +520,15 @@
         </ul>
 
         <div class="footer__social">
-          <svg width="20" height="20" viewBox="0 0 20 20">
+          <svg width="20" height="20" viewBox="0 0 20 20" tabindex="0">
             <use xlink:href="img/sprite/sprite.svg#facebook-logo"></use>
           </svg>
 
-          <svg width="20" height="20" viewBox="0 0 20 20">
+          <svg width="20" height="20" viewBox="0 0 20 20" tabindex="0">
             <use xlink:href="img/sprite/sprite.svg#instagram-logo"></use>
           </svg>
 
-          <svg width="20" height="16" viewBox="0 0 20 16">
+          <svg width="20" height="16" viewBox="0 0 20 16" tabindex="0">
             <use xlink:href="img/sprite/sprite.svg#twitter-logo"></use>
           </svg>
         </div>

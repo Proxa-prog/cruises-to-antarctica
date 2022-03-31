@@ -1,5 +1,5 @@
 .early-booking {
-  min-height: 616px;
+  min-height: 554px;
   background-image: url("../img/content/background_booking_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,7 +19,7 @@
   }
 
   @include vp-767 {
-    min-height: 805px;
+    min-height: 760px;
     background-image: url("../img/content/background_booking_mobile.jpg");
 
     @include retina {
@@ -33,31 +33,43 @@
   box-sizing: border-box;
   display: flex;
 
+  input {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
   h3 {
     font-weight: 700;
     font-size: 40px;
     line-height: 150%;
     margin-bottom: 0;
+    margin-top: 9px;
   }
 
   p {
     font-size: 18px;
     line-height: 150%;
+    margin-top: 0;
 
     .early-booking__text-space {
+      display: none;
+    }
+
+    .early-booking__form-field-br {
       display: none;
     }
   }
 
   @include vp-1366 {
-    padding: 100px 0;
+    padding: 86px 0;
     flex-wrap: wrap;
     text-align: center;
 
     h3 {
       font-size: 34px;
       line-height: 150%;
-      margin-top: 0%;
+      margin-top: 0;
+      margin-bottom: 5px;
     }
 
     p {
@@ -68,11 +80,12 @@
   }
 
   @include vp-767 {
-    padding: 65px 0;
+    padding: 59px 0;
 
     h3 {
       font-size: 24px;
       line-height: 130%;
+      margin-bottom: 14px;
     }
 
     p {
@@ -86,6 +99,10 @@
       .early-booking__text-space {
         display: inline;
       }
+
+      .early-booking__form-field-br {
+        display: inline;
+      }
     }
   }
 }
@@ -96,6 +113,12 @@
 
   @include vp-1366 {
     width: 100%;
+    margin-bottom: 34px;
+  }
+
+  @include vp-767 {
+    padding: 0 10px;
+    margin-bottom: 16px;
   }
 }
 
@@ -103,20 +126,26 @@
   width: 403px;
   height: 455px;
   background-color: $color-text-black;
-  padding: 50px;
+  padding: 44px 50px;
   box-sizing: border-box;
   color: $color-text-white;
   margin-left: auto;
+  position: relative;
 
   p {
     font-weight: 500;
     font-size: 18px;
     line-height: 150%;
     margin-top: 0;
+    margin-bottom: 26px;
   }
 
   label {
     display: none;
+
+    br {
+      display: none;
+    }
   }
 
   input {
@@ -129,8 +158,20 @@
   }
 
   input[type="checkbox"] {
-    display: none;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    z-index: -1;
+    opacity: 0;
+    left: 37px;
+    bottom: 96px;
   }
+
+  input[type="checkbox"]:focus + label::before {
+    outline-offset: 2px;
+    outline: 2px solid $color-text-white;
+  }
+
 
   input[type="checkbox"] + label {
     display: inline;
@@ -139,6 +180,8 @@
     position: relative;
     margin-left: 23px;
     cursor: pointer;
+
+
 
     &::before {
       content: "";
@@ -173,22 +216,45 @@
     height: 43px;
     border: none;
     background-color: $color-text-white;
-    margin-top: 35px;
+    margin-top: 29px;
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
+    cursor: pointer;
   }
 
   @include vp-1366 {
     margin: 0 auto;
+
+    p {
+      font-size: 18px;
+      line-height: 150%;
+      text-align: left;
+
+      br {
+        display: none;
+      }
+    }
+
+    label {
+      br {
+        display: none;
+      }
+    }
   }
 
   @include vp-767 {
     min-height: 460px;
-    padding: 40px 30px;
+    padding: 36px 30px;
+
+    button {
+      margin-top: 23px;
+    }
 
     p {
+      font-size: 18px;
       line-height: 140%;
+      text-align: center;
     }
 
     input[type="checkbox"] + label {
@@ -198,10 +264,16 @@
       text-align: left;
       min-height: 28px;
       width: 90%;
+      margin-left: 27px;
+
+      br {
+        display: inline;
+      }
 
 
       &::before {
-        left: -24px;
+        left: -26px;
+        top: 2px;
       }
     }
 
@@ -212,9 +284,15 @@
       min-height: 28px;
 
       &::after {
-        left: -21px;
-        bottom: 5px;
+        left: -23px;
+        bottom: 7px;
       }
+    }
+
+    input {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
     }
   }
 }
