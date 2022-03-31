@@ -5,16 +5,33 @@
 
 .cruise-catalog__wrapper {
   box-sizing: border-box;
-  padding: 120px 0 90px;
+  padding: 87px 0 90px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    margin-bottom: 50px;
+  }
 
   @include vp-1366 {
-    padding-top: 100px;
+    padding-top: 71px;
     padding-bottom: 70px;
+
+    h2 {
+      font-size: 26px;
+    }
   }
 
   @include vp-767 {
-    padding-top: 65px;
+    padding-top: 36px;
     padding-bottom: 35px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 150%;
+      margin-bottom: 31px;
+    }
   }
 }
 
@@ -29,7 +46,7 @@
 
 .cruise-catalog__item {
   width: 260px;
-  min-height: 406px;
+  min-height: 385px;
   text-align: left;
   background-color: $color-header-background;
   margin-right: 15px;
@@ -72,7 +89,7 @@
 
   h3 {
     position: absolute;
-    bottom: 30px;
+    bottom: 24px;
     left: 30px;
     font-weight: 500;
     font-size: 18px;
@@ -81,7 +98,7 @@
   }
 
   &:hover {
-    padding: 35px 25px;
+    padding: 29px 25px;
     background-color: $color-dark-blue;
 
     img {
@@ -104,18 +121,28 @@
       font-size: 18px;
       line-height: 150%;
       margin: 0;
-      margin-bottom: 25px;
+      margin-bottom: 14px;
     }
 
     a {
       display: inline-block;
       vertical-align: middle;
+      margin-top: 16px;
     }
   }
 
   @include vp-1366 {
     width: 309px;
     height: 386px;
+
+    h3 {
+      bottom: 28px;
+      left: 38px;
+    }
+
+    &:hover {
+      padding: 27px 39px;
+    }
   }
 
   @include vp-767 {
@@ -123,6 +150,15 @@
     height: 386px;
     margin-right: 10px;
     margin-left: 10px;
+
+    &:hover {
+      padding: 29px 26px;
+    }
+
+    h3 {
+      bottom: 17px;
+      left: 25px;
+    }
   }
 }
 

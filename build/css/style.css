@@ -1202,7 +1202,7 @@ template {
 }
 
 .promo {
-  margin-top: 175px;
+  margin-top: 163px;
   padding: 0 95px;
   text-align: left;
   color: #f9fbfd;
@@ -1217,6 +1217,7 @@ template {
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
+  margin-bottom: 0;
 }
 
 .promo p {
@@ -1224,6 +1225,7 @@ template {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  margin-top: 10px;
 }
 
 .footer {
@@ -1254,11 +1256,16 @@ template {
   width: 70px;
   height: 38px;
   fill: #f9fbfd;
-  margin-right: 40px;
+  margin-right: 9px;
 }
 
 .footer__list-nav.nav-list {
   width: 626px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -1284,24 +1291,36 @@ template {
 .nav-list {
   margin: 0;
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   list-style: none;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  width: 623px;
 }
 
 .nav-list__item {
-  padding-left: 33px;
+  padding-left: 32px;
 }
 
 .nav-list__item a {
   color: #f9fbfd;
+}
+
+.nav-list--closed {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.nav-list--open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .description__wrapper {
@@ -1321,12 +1340,22 @@ template {
 
 .description__text-block {
   width: 600px;
-  padding: 66px 88px 0 0;
+  padding: 33px 88px 0 0;
   text-align: left;
 }
 
 .description__text-block br {
   display: none;
+}
+
+.description__text-block h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+}
+
+.description__text-block p {
+  line-height: 150%;
 }
 
 .advantages {
@@ -1338,13 +1367,13 @@ template {
 }
 
 .advantages__wrapper {
-  padding: 120px 0;
+  padding: 110px 0;
   text-align: center;
 }
 
 .advantages__wrapper h2 {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
@@ -1368,7 +1397,7 @@ template {
   width: 360px;
   min-height: 241px;
   background-color: #f9fbfd;
-  padding: 70px 34px 0 30px;
+  padding: 80px 34px 0 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: left;
@@ -1379,7 +1408,11 @@ template {
   font-size: 18px;
   line-height: 150%;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.advantages__item h3 br {
+  display: none;
 }
 
 .advantages__item p {
@@ -1388,8 +1421,30 @@ template {
   margin: 0;
 }
 
+.advantages__item p br {
+  display: none;
+}
+
 .advantages__item .advantages__zodiac {
   line-height: 140%;
+}
+
+.advantages__item-zodiac p br {
+  display: inline;
+}
+
+.advantages__item-zodiac p .advantages__item-zodiac-br-1 {
+  display: none;
+}
+
+.advantages__item-all-inclusive p br {
+  display: inline;
+}
+
+.advantages__item-all-inclusive p .advantages__item-all-inclusive-br1,
+.advantages__item-all-inclusive p .advantages__item-all-inclusive-br2,
+.advantages__item-all-inclusive p .advantages__item-all-inclusive-br3 {
+  display: none;
 }
 
 .advantages__a-cruise-ship {
@@ -1403,7 +1458,7 @@ template {
   height: 32px;
   background-image: url("../img/svg/ship.svg");
   background-size: contain;
-  top: -42px;
+  top: -48px;
   background-repeat: no-repeat;
 }
 
@@ -1445,7 +1500,14 @@ template {
 .cruise-catalog__wrapper {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 120px 0 90px;
+  padding: 87px 0 90px;
+}
+
+.cruise-catalog__wrapper h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  margin-bottom: 50px;
 }
 
 .cruise-catalog__list {
@@ -1464,7 +1526,7 @@ template {
 
 .cruise-catalog__item {
   width: 260px;
-  min-height: 406px;
+  min-height: 385px;
   text-align: left;
   background-color: #3475c5;
   margin-right: 15px;
@@ -1509,7 +1571,7 @@ template {
 
 .cruise-catalog__item h3 {
   position: absolute;
-  bottom: 30px;
+  bottom: 24px;
   left: 30px;
   font-weight: 500;
   font-size: 18px;
@@ -1518,7 +1580,7 @@ template {
 }
 
 .cruise-catalog__item:hover {
-  padding: 35px 25px;
+  padding: 29px 25px;
   background-color: #011c40;
 }
 
@@ -1542,12 +1604,13 @@ template {
   font-size: 18px;
   line-height: 150%;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 }
 
 .cruise-catalog__item:hover a {
   display: inline-block;
   vertical-align: middle;
+  margin-top: 16px;
 }
 
 .cruise-catalog__button {
@@ -1558,7 +1621,7 @@ template {
 }
 
 .early-booking {
-  min-height: 616px;
+  min-height: 554px;
   background-image: url("../img/content/background_booking_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1574,19 +1637,30 @@ template {
   display: flex;
 }
 
+.early-booking__wrapper input {
+  font-size: 14px;
+  line-height: 150%;
+}
+
 .early-booking__wrapper h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 150%;
   margin-bottom: 0;
+  margin-top: 9px;
 }
 
 .early-booking__wrapper p {
   font-size: 18px;
   line-height: 150%;
+  margin-top: 0;
 }
 
 .early-booking__wrapper p .early-booking__text-space {
+  display: none;
+}
+
+.early-booking__wrapper p .early-booking__form-field-br {
   display: none;
 }
 
@@ -1601,11 +1675,12 @@ template {
   width: 403px;
   height: 455px;
   background-color: #011c40;
-  padding: 50px;
+  padding: 44px 50px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   color: #f9fbfd;
   margin-left: auto;
+  position: relative;
 }
 
 .early-booking__form-field p {
@@ -1613,9 +1688,14 @@ template {
   font-size: 18px;
   line-height: 150%;
   margin-top: 0;
+  margin-bottom: 26px;
 }
 
 .early-booking__form-field label {
+  display: none;
+}
+
+.early-booking__form-field label br {
   display: none;
 }
 
@@ -1630,7 +1710,18 @@ template {
 }
 
 .early-booking__form-field input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  z-index: -1;
+  opacity: 0;
+  left: 37px;
+  bottom: 96px;
+}
+
+.early-booking__form-field input[type="checkbox"]:focus + label::before {
+  outline-offset: 2px;
+  outline: 2px solid #f9fbfd;
 }
 
 .early-booking__form-field input[type="checkbox"] + label {
@@ -1674,14 +1765,15 @@ template {
   height: 43px;
   border: none;
   background-color: #f9fbfd;
-  margin-top: 35px;
+  margin-top: 29px;
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
+  cursor: pointer;
 }
 
 .contacts {
-  min-height: 564px;
+  min-height: 546px;
 }
 
 .contacts__wrapper {
@@ -1693,7 +1785,7 @@ template {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  min-height: 564px;
+  min-height: 546px;
   padding: 120px 0;
 }
 
@@ -1707,7 +1799,7 @@ template {
 .contacts__address {
   width: 500px;
   min-height: 306px;
-  padding: 66px 0;
+  padding: 56px 0;
   font-size: 16px;
   line-height: 150%;
 }
@@ -1716,11 +1808,12 @@ template {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
 }
 
 .contacts__address address {
-  margin-bottom: 33px;
+  font-style: normal;
+  margin-bottom: 21px;
   margin-left: 28px;
   position: relative;
 }
@@ -1772,11 +1865,17 @@ template {
   .container {
     padding: 0 103px;
   }
+}
 
+@media (max-width: 1365px) {
   .header {
     min-width: 768px;
     min-height: 638px;
     background-image: url("../img/content/backgrond_header_tablet.jpg");
+  }
+
+  .nav {
+    min-height: 82px;
   }
 
   .nav svg {
@@ -1785,12 +1884,15 @@ template {
   }
 
   .promo {
-    margin-top: 200px;
-    padding: 0;
+    margin-top: 186px;
+    padding: 0 4px;
   }
 
   .promo h2 {
     margin-bottom: 0;
+    margin-bottom: 13px;
+    font-size: 50px;
+    line-height: 61px;
   }
 
   .promo p {
@@ -1810,11 +1912,11 @@ template {
   }
 
   .footer__list-nav.nav-list {
-    width: 462px;
+    width: 470px;
   }
 
   .footer__list-nav-item.nav-list__item {
-    width: 175px;
+    padding-left: 25px;
   }
 
   .footer__list-nav-item.nav-list__item a {
@@ -1823,75 +1925,113 @@ template {
   }
 
   .footer__social {
-    width: 132px;
+    width: 114px;
   }
 
   .footer__social svg {
-    margin-left: 23px;
+    margin-left: 20px;
+    width: 18px;
+    height: 16px;
   }
 
   .nav-list {
     font-size: 14px;
     line-height: 17px;
+    width: 524px;
   }
 
   .nav-list__item {
     padding-left: 23px;
   }
 
+  .nav-list--closed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .nav-list--open {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
   .description__wrapper {
-    padding: 120px 0;
+    padding: 72px 0;
   }
 
-  .description__wrapper img {
-    width: 560px;
-    height: 301px;
-  }
-
-  .description__img-wrapper {
-    margin-left: auto;
-  }
-}
-
-@media (max-width: 1439px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1439px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1439px) and (min-resolution: 144dpi), (max-width: 1439px) and (min-resolution: 1.5dppx) {
-  .header {
-    background-image: url("../img/content/backgrond_header_tablet@2x.jpg");
-  }
-}
-
-@media (max-width: 1366px) {
-  .advantages__wrapper {
-    padding: 100px 0;
-  }
-
-  .advantages__wrapper h2 {
-    font-size: 26px;
-  }
-}
-
-@media (max-width: 1365px) {
   .description__wrapper img {
     width: 100%;
     height: 100%;
   }
 
+  .description__text-block {
+    width: 324px;
+    padding: 0;
+    margin-right: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .description__text-block h2 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 140%;
+    margin-bottom: 10px;
+  }
+
+  .description__text-block br {
+    display: inline;
+  }
+
   .description__img-wrapper {
     margin-left: auto;
     padding-top: 66px;
+    padding-top: 30px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .description__img-wrapper img {
+    height: 266px;
   }
 
   .advantages {
     min-height: 588px;
   }
 
+  .advantages__wrapper {
+    padding: 90px 0;
+  }
+
+  .advantages__wrapper h2 {
+    font-size: 26px;
+  }
+
   .advantages__item {
     width: 206px;
     min-height: 310px;
-    padding: 65px 18px 18px;
+    padding: 75px 11px 18px 24px;
   }
 
   .advantages__item h3 {
     line-height: 140%;
+  }
+
+  .advantages__item h3 br {
+    display: inline;
+  }
+
+  .advantages__item p br {
+    display: none;
+  }
+
+  .advantages__item-all-inclusive p br {
+    display: none;
   }
 
   .advantages__a-cruise-ship::before {
@@ -1910,13 +2050,26 @@ template {
   }
 
   .cruise-catalog__wrapper {
-    padding-top: 100px;
+    padding-top: 71px;
     padding-bottom: 70px;
+  }
+
+  .cruise-catalog__wrapper h2 {
+    font-size: 26px;
   }
 
   .cruise-catalog__item {
     width: 309px;
     height: 386px;
+  }
+
+  .cruise-catalog__item h3 {
+    bottom: 28px;
+    left: 38px;
+  }
+
+  .cruise-catalog__item:hover {
+    padding: 27px 39px;
   }
 
   .early-booking {
@@ -1925,7 +2078,7 @@ template {
   }
 
   .early-booking__wrapper {
-    padding: 100px 0;
+    padding: 86px 0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     text-align: center;
@@ -1934,7 +2087,8 @@ template {
   .early-booking__wrapper h3 {
     font-size: 34px;
     line-height: 150%;
-    margin-top: 0%;
+    margin-top: 0;
+    margin-bottom: 5px;
   }
 
   .early-booking__wrapper p .early-booking__text-space {
@@ -1943,10 +2097,29 @@ template {
 
   .early-booking__text-wrapper {
     width: 100%;
+    margin-bottom: 34px;
   }
 
   .early-booking__form-field {
     margin: 0 auto;
+  }
+
+  .early-booking__form-field p {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: left;
+  }
+
+  .early-booking__form-field p br {
+    display: none;
+  }
+
+  .early-booking__form-field label br {
+    display: none;
+  }
+
+  .contacts {
+    min-height: 532px;
   }
 
   .contacts__wrapper {
@@ -1969,6 +2142,7 @@ template {
     width: 324px;
     font-size: 16px;
     line-height: 150%;
+    padding: 46px 0 0 5px;
   }
 
   .contacts__address p {
@@ -1981,6 +2155,10 @@ template {
 }
 
 @media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1365px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1365px) and (min-resolution: 144dpi), (max-width: 1365px) and (min-resolution: 1.5dppx) {
+  .header {
+    background-image: url("../img/content/backgrond_header_tablet@2x.jpg");
+  }
+
   .early-booking {
     background-image: url("../img/content/background_booking_tablet@2x.jpg");
   }
@@ -1989,39 +2167,6 @@ template {
 @media (max-width: 1023px) {
   .container {
     padding: 0 45px;
-  }
-
-  .description__wrapper {
-    padding: 100px 0;
-  }
-
-  .description__wrapper img {
-    width: 324px;
-    height: 264px;
-  }
-
-  .description__text-block {
-    width: 324px;
-    padding: 0;
-    margin-right: 30px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-
-  .description__text-block h2 {
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 140%;
-  }
-
-  .description__text-block br {
-    display: inline;
-  }
-
-  .description__img-wrapper {
-    padding-top: 40px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
   }
 }
 
@@ -2064,7 +2209,7 @@ template {
     width: 42px;
     height: 22px;
     position: absolute;
-    left: 3%;
+    left: 5%;
   }
 
   .is-open {
@@ -2132,7 +2277,7 @@ template {
     width: 24px;
     height: 12px;
     position: absolute;
-    right: 15px;
+    right: 10px;
     top: 25px;
   }
 
@@ -2149,7 +2294,7 @@ template {
   }
 
   .promo {
-    margin-top: 35px;
+    margin-top: 94px;
   }
 
   .promo br {
@@ -2159,7 +2304,7 @@ template {
   .promo h2 {
     font-size: 36px;
     line-height: 125%;
-    margin-bottom: 25px;
+    margin-bottom: 11px;
   }
 
   .promo p {
@@ -2183,8 +2328,8 @@ template {
   .footer__list-nav.nav-list {
     display: block;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 21px;
+    margin-bottom: 17px;
   }
 
   .footer__list-nav-item.nav-list__item {
@@ -2201,10 +2346,11 @@ template {
 
   .footer__social svg {
     margin-left: 0;
-    margin-right: 23px;
+    margin-right: 16px;
   }
 
   .nav-list {
+    width: 280px;
     font-size: 18px;
     line-height: 22px;
     margin-top: 33px;
@@ -2212,7 +2358,7 @@ template {
 
   .nav-list__item {
     width: 240px;
-    min-height: 40px;
+    min-height: 31px;
     padding: 10px;
   }
 
@@ -2220,10 +2366,29 @@ template {
     color: #011c40;
   }
 
+  .nav-list--closed {
+    display: none;
+  }
+
+  .nav-list--open {
+    display: block;
+  }
+
   .description__wrapper {
-    padding: 65px 0;
+    padding: 62px 0;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+
+  .description__wrapper h2 {
+    margin-top: -2px;
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 140%;
+  }
+
+  .description__wrapper h2 br {
+    display: inline;
   }
 
   .description__wrapper br {
@@ -2233,6 +2398,10 @@ template {
   .description__wrapper img {
     width: 290px;
     height: 186px;
+  }
+
+  .description__wrapper p {
+    margin-top: 0;
   }
 
   .description__text-block {
@@ -2248,8 +2417,13 @@ template {
     margin: 0 auto;
   }
 
+  .advantages__wrapper {
+    padding: 62px 0 38px;
+  }
+
   .advantages__wrapper h2 {
     font-size: 24px;
+    margin-bottom: 29px;
   }
 
   .advantages__item {
@@ -2257,6 +2431,35 @@ template {
     min-height: 249px;
     margin: 0 auto;
     margin-bottom: 30px;
+    padding-left: 20px;
+  }
+
+  .advantages__item h3 {
+    margin-bottom: 5px;
+  }
+
+  .advantages__item p br {
+    display: inline;
+  }
+
+  .advantages__item-zodiac p br {
+    display: none;
+  }
+
+  .advantages__item-zodiac p .advantages__item-zodiac-br-0 {
+    display: inline;
+  }
+
+  .advantages__item-zodiac p .advantages__item-zodiac-br-1 {
+    display: inline;
+  }
+
+  .advantages__item-all-inclusive p br {
+    display: inline;
+  }
+
+  .advantages__item-all-inclusive p .advantages__item-all-inclusive-br2 {
+    display: inline;
   }
 
   .advantages__a-cruise-ship::before {
@@ -2275,8 +2478,14 @@ template {
   }
 
   .cruise-catalog__wrapper {
-    padding-top: 65px;
+    padding-top: 36px;
     padding-bottom: 35px;
+  }
+
+  .cruise-catalog__wrapper h2 {
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 31px;
   }
 
   .cruise-catalog__item {
@@ -2286,18 +2495,28 @@ template {
     margin-left: 10px;
   }
 
+  .cruise-catalog__item:hover {
+    padding: 29px 26px;
+  }
+
+  .cruise-catalog__item h3 {
+    bottom: 17px;
+    left: 25px;
+  }
+
   .early-booking {
-    min-height: 805px;
+    min-height: 760px;
     background-image: url("../img/content/background_booking_mobile.jpg");
   }
 
   .early-booking__wrapper {
-    padding: 65px 0;
+    padding: 59px 0;
   }
 
   .early-booking__wrapper h3 {
     font-size: 24px;
     line-height: 130%;
+    margin-bottom: 14px;
   }
 
   .early-booking__wrapper p {
@@ -2313,13 +2532,28 @@ template {
     display: inline;
   }
 
+  .early-booking__wrapper p .early-booking__form-field-br {
+    display: inline;
+  }
+
+  .early-booking__text-wrapper {
+    padding: 0 10px;
+    margin-bottom: 16px;
+  }
+
   .early-booking__form-field {
     min-height: 460px;
-    padding: 40px 30px;
+    padding: 36px 30px;
+  }
+
+  .early-booking__form-field button {
+    margin-top: 23px;
   }
 
   .early-booking__form-field p {
+    font-size: 18px;
     line-height: 140%;
+    text-align: center;
   }
 
   .early-booking__form-field input[type="checkbox"] + label {
@@ -2333,10 +2567,16 @@ template {
     text-align: left;
     min-height: 28px;
     width: 90%;
+    margin-left: 27px;
+  }
+
+  .early-booking__form-field input[type="checkbox"] + label br {
+    display: inline;
   }
 
   .early-booking__form-field input[type="checkbox"] + label::before {
-    left: -24px;
+    left: -26px;
+    top: 2px;
   }
 
   .early-booking__form-field input[type="checkbox"]:checked + label {
@@ -2351,13 +2591,19 @@ template {
   }
 
   .early-booking__form-field input[type="checkbox"]:checked + label::after {
-    left: -21px;
-    bottom: 5px;
+    left: -23px;
+    bottom: 7px;
+  }
+
+  .early-booking__form-field input {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
   }
 
   .contacts__wrapper {
     min-height: 703px;
-    padding: 65px 0;
+    padding: 40px 0 24px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2381,6 +2627,11 @@ template {
 
   .contacts__address p {
     width: 98%;
+    margin-bottom: 27px;
+  }
+
+  .contacts__address address::before {
+    top: 3px;
   }
 }
 
