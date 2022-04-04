@@ -8,7 +8,7 @@
     height: 301px;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding: 72px 0;
 
     img {
@@ -65,7 +65,7 @@
     line-height: 150%;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 324px;
     padding: 0;
     margin-right: 30px;
@@ -94,7 +94,7 @@
 }
 
 .description__img-wrapper {
-  @include vp-1366 {
+  @include vp-1023 {
     margin-left: auto;
     padding-top: 66px;
     padding-top: 30px;

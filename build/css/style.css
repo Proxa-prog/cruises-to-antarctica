@@ -442,6 +442,7 @@ html {
 }
 
 body {
+  font-family: "Montserrat","Arial",sans-serif;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
@@ -1159,6 +1160,10 @@ template {
   pointer-events: auto;
 }
 
+.header__opasity::after {
+  opacity: 0;
+}
+
 .header {
   margin: 0 auto;
   background-image: url("../img/content/backgrond_header_desktop.jpg");
@@ -1166,8 +1171,9 @@ template {
   background-color: #3475c5;
   background-size: cover;
   background-position: center;
-  min-width: 1366px;
+  min-width: 1024px;
   min-height: 650px;
+  position: relative;
 }
 
 .nav {
@@ -1185,6 +1191,10 @@ template {
   -ms-flex-align: center;
   align-items: center;
   color: #f9fbfd;
+}
+
+.nav a {
+  cursor: auto;
 }
 
 .nav svg {
@@ -1241,6 +1251,10 @@ template {
   align-items: center;
 }
 
+.footer a {
+  cursor: auto;
+}
+
 .footer__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1281,10 +1295,12 @@ template {
   -ms-flex-align: center;
   align-items: center;
   margin-left: auto;
+  padding: 0 0 10px;
 }
 
 .footer__social svg {
   margin-left: 33px;
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -1297,9 +1313,18 @@ template {
   font-size: 16px;
   line-height: 20px;
   width: 623px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .nav-list__item {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   padding-left: 32px;
 }
 
@@ -1373,7 +1398,6 @@ template {
 
 .advantages__wrapper h2 {
   margin: 0;
-  margin-bottom: 49px;
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
@@ -1388,9 +1412,9 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .advantages__item {
@@ -1398,6 +1422,8 @@ template {
   min-height: 241px;
   background-color: #f9fbfd;
   padding: 80px 34px 0 30px;
+  margin: auto;
+  margin-top: 49px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: left;
@@ -1528,7 +1554,7 @@ template {
   width: 260px;
   min-height: 385px;
   text-align: left;
-  background-color: #3475c5;
+  background-color: #011c40;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 30px;
@@ -1536,6 +1562,7 @@ template {
   box-sizing: border-box;
   color: #f9fbfd;
   position: relative;
+  overflow: auto;
 }
 
 .cruise-catalog__item img {
@@ -1554,6 +1581,10 @@ template {
   font-weight: 600;
   font-size: 14px;
   line-height: 150%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .cruise-catalog__item dt {
@@ -1579,26 +1610,31 @@ template {
   margin: 0;
 }
 
-.cruise-catalog__item:hover {
+.cruise-catalog__item:hover,
+.cruise-catalog__item:focus {
   padding: 29px 25px;
   background-color: #011c40;
 }
 
-.cruise-catalog__item:hover img {
+.cruise-catalog__item:hover img,
+.cruise-catalog__item:focus img {
   display: none;
 }
 
-.cruise-catalog__item:hover dl {
+.cruise-catalog__item:hover dl,
+.cruise-catalog__item:focus dl {
   display: inline;
   font-weight: 400;
 }
 
-.cruise-catalog__item:hover dd {
+.cruise-catalog__item:hover dd,
+.cruise-catalog__item:focus dd {
   margin: 0;
   margin-bottom: 12px;
 }
 
-.cruise-catalog__item:hover h3 {
+.cruise-catalog__item:hover h3,
+.cruise-catalog__item:focus h3 {
   position: static;
   font-weight: 500;
   font-size: 18px;
@@ -1607,7 +1643,8 @@ template {
   margin-bottom: 14px;
 }
 
-.cruise-catalog__item:hover a {
+.cruise-catalog__item:hover a,
+.cruise-catalog__item:focus a {
   display: inline-block;
   vertical-align: middle;
   margin-top: 16px;
@@ -1665,14 +1702,14 @@ template {
 }
 
 .early-booking__text-wrapper {
-  width: 1fr;
+  width: 621px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
 }
 
 .early-booking__form-field {
-  width: 403px;
+  width: 430px;
   height: 455px;
   background-color: #011c40;
   padding: 44px 50px;
@@ -1770,6 +1807,10 @@ template {
   font-size: 14px;
   line-height: 150%;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .contacts {
@@ -1831,6 +1872,7 @@ template {
 .contacts__address a {
   margin-left: 28px;
   position: relative;
+  margin-right: 71px;
 }
 
 .contacts__address a::before {
@@ -1868,6 +1910,25 @@ template {
 }
 
 @media (max-width: 1365px) {
+  .footer__list-nav.nav-list {
+    width: 579px;
+  }
+
+  .early-booking__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .early-booking__form-field button {
+    margin-top: 14px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 45px;
+  }
+
   .header {
     min-width: 768px;
     min-height: 638px;
@@ -2154,19 +2215,13 @@ template {
   }
 }
 
-@media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1365px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1365px) and (min-resolution: 144dpi), (max-width: 1365px) and (min-resolution: 1.5dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (-o-min-device-pixel-ratio: 3/2), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
   .header {
     background-image: url("../img/content/backgrond_header_tablet@2x.jpg");
   }
 
   .early-booking {
     background-image: url("../img/content/background_booking_tablet@2x.jpg");
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 45px;
   }
 }
 
@@ -2186,6 +2241,17 @@ template {
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .header__opasity::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.3;
   }
 
   .header {
@@ -2214,10 +2280,11 @@ template {
 
   .is-open {
     background-color: #f9fbfd;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    min-height: 568px;
+    min-height: 100vh;
+    z-index: 1000;
   }
 
   .is-open svg {
@@ -2302,13 +2369,13 @@ template {
   }
 
   .promo h2 {
-    font-size: 36px;
+    font-size: 11.3vw;
     line-height: 125%;
     margin-bottom: 11px;
   }
 
   .promo p {
-    font-size: 16px;
+    font-size: 3.55vw;
     line-height: 140%;
   }
 
@@ -2353,12 +2420,12 @@ template {
     width: 280px;
     font-size: 18px;
     line-height: 22px;
-    margin-top: 33px;
+    margin-top: 55px;
   }
 
   .nav-list__item {
     width: 240px;
-    min-height: 31px;
+    min-height: 50px;
     padding: 10px;
   }
 
@@ -2544,6 +2611,7 @@ template {
   .early-booking__form-field {
     min-height: 460px;
     padding: 36px 30px;
+    width: 100%;
   }
 
   .early-booking__form-field button {
@@ -2601,8 +2669,12 @@ template {
     line-height: 150%;
   }
 
+  .contacts {
+    min-height: 420px;
+  }
+
   .contacts__wrapper {
-    min-height: 703px;
+    min-height: 420px;
     padding: 40px 0 24px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;

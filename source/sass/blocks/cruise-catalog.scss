@@ -14,7 +14,7 @@
     margin-bottom: 50px;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding-top: 71px;
     padding-bottom: 70px;
 
@@ -48,13 +48,15 @@
   width: 260px;
   min-height: 385px;
   text-align: left;
-  background-color: $color-header-background;
+  background-color: #011c40;
   margin-right: 15px;
   margin-left: 15px;
   margin-bottom: 30px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: $color-text-white;
+  color: #f9fbfd;
   position: relative;
+  overflow: auto;
 
   img {
     width: 100%;
@@ -72,6 +74,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 150%;
+    user-select: none;
   }
 
   dt {
@@ -97,7 +100,7 @@
     margin: 0;
   }
 
-  &:hover {
+  &:hover, &:focus {
     padding: 29px 25px;
     background-color: $color-dark-blue;
 
@@ -131,7 +134,7 @@
     }
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 309px;
     height: 386px;
 

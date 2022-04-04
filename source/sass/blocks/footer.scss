@@ -5,7 +5,11 @@
   flex-wrap: wrap;
   align-items: center;
 
-  @include vp-1366 {
+  a {
+    cursor: auto;
+  }
+
+  @include vp-1023 {
     min-height: 120px;
   }
 
@@ -26,7 +30,7 @@
     margin-right: 9px;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     .logo-footer {
       width: 38px;
       height: 20px;
@@ -51,6 +55,10 @@
   box-sizing: border-box;
 
   @include vp-1366 {
+    width: 579px;
+  }
+
+  @include vp-1023 {
     width: 470px;
   }
 
@@ -64,7 +72,7 @@
 
 .footer__list-nav-item.nav-list__item {
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding-left: 25px;
 
     a {
@@ -88,13 +96,15 @@
   flex-wrap: wrap;
   align-items: center;
   margin-left: auto;
+  padding: 0 0 10px;
 
   svg {
     margin-left: 33px;
+    margin-top: 10px;
     cursor: pointer;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 114px;
 
     svg {

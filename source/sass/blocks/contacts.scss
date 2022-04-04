@@ -1,8 +1,12 @@
 .contacts {
   min-height: 546px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     min-height: 532px;
+  }
+
+  @include vp-767 {
+    min-height: 420px;
   }
 }
 
@@ -13,13 +17,13 @@
   min-height: 546px;
   padding: 120px 0;
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding: 100px 0;
     min-height: 535px;
   }
 
   @include vp-767 {
-    min-height: 703px;
+    min-height: 420px;
     padding:40px 0 24px;
     justify-content: center;
   }
@@ -31,7 +35,7 @@
   height: 306px;
   position: relative;
 
-  @include vp-1366 {
+  @include vp-1023 {
     background-image: url("../img/content/map_tablet.png");
     width: 324px;
     height: 335px;
@@ -86,6 +90,7 @@
   a {
     margin-left: 28px;
     position: relative;
+    margin-right: 71px;
 
     &::before {
       content: "";
@@ -102,7 +107,7 @@
     display: none;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 324px;
     font-size: 16px;
     line-height: 150%;
