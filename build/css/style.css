@@ -1552,7 +1552,7 @@ template {
 
 .cruise-catalog__item {
   width: 260px;
-  min-height: 385px;
+  height: 385px;
   text-align: left;
   background-color: #011c40;
   margin-right: 15px;
@@ -1563,11 +1563,25 @@ template {
   color: #f9fbfd;
   position: relative;
   overflow: auto;
+  scrollbar-width: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 29px 25px;
+}
+
+.cruise-catalog__item::-webkit-scrollbar {
+  display: none;
 }
 
 .cruise-catalog__item img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
 }
 
 .cruise-catalog__item dl {
@@ -1575,7 +1589,7 @@ template {
 }
 
 .cruise-catalog__item a {
-  display: none;
+  opacity: 0;
   text-align: center;
   padding: 8px;
   font-weight: 600;
@@ -1585,6 +1599,9 @@ template {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .cruise-catalog__item dt {
@@ -1598,6 +1615,8 @@ template {
   font-size: 14px;
   line-height: 140%;
   color: #d8d8d9;
+  margin: 0;
+  margin-bottom: 12px;
 }
 
 .cruise-catalog__item h3 {
@@ -1610,51 +1629,38 @@ template {
   margin: 0;
 }
 
-.cruise-catalog__item:hover,
-.cruise-catalog__item:focus {
-  padding: 29px 25px;
-  background-color: #011c40;
+.cruise-catalog__button {
+  width: 100%;
+  min-height: 40px;
+  border: none;
+  background-color: #f9fbfd;
 }
 
-.cruise-catalog__item:hover img,
-.cruise-catalog__item:focus img {
+.cruise-catalog__button:focus {
+  opacity: 1;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 16px;
+  z-index: 10;
+  margin: 0;
+}
+
+.cruise-catalog__button:focus ~ picture img {
   display: none;
 }
 
-.cruise-catalog__item:hover dl,
-.cruise-catalog__item:focus dl {
+.cruise-catalog__button:focus ~ dl {
   display: inline;
   font-weight: 400;
 }
 
-.cruise-catalog__item:hover dd,
-.cruise-catalog__item:focus dd {
-  margin: 0;
-  margin-bottom: 12px;
-}
-
-.cruise-catalog__item:hover h3,
-.cruise-catalog__item:focus h3 {
+.cruise-catalog__button:focus ~ h3 {
   position: static;
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
   margin: 0;
   margin-bottom: 14px;
-}
-
-.cruise-catalog__item:hover a,
-.cruise-catalog__item:focus a {
-  display: inline-block;
-  vertical-align: middle;
-  margin-top: 16px;
-}
-
-.cruise-catalog__button {
-  width: 100%;
-  min-height: 40px;
-  border: none;
-  background-color: #f9fbfd;
 }
 
 .early-booking {
