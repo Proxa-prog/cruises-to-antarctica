@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   min-height: 562px;
 
-  @include vp-1366 {
+  @include vp-1023 {
     min-height: 588px;
   }
 }
@@ -16,13 +16,12 @@
 
   h2 {
     margin: 0;
-    margin-bottom: 49px;
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     padding: 90px 0;
 
     h2 {
@@ -46,7 +45,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .advantages__item {
@@ -54,6 +53,8 @@
   min-height: 241px;
   background-color: $color-text-white;
   padding: 80px 34px 0 30px;
+  margin: auto;
+  margin-top: 49px;
   box-sizing: border-box;
   text-align: left;
 
@@ -83,7 +84,7 @@
     line-height: 140%;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     width: 206px;
     min-height: 310px;
     padding: 75px 11px 18px 24px;
@@ -164,7 +165,7 @@
     }
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     p {
       br {
         display: none;
@@ -199,7 +200,7 @@
     background-repeat: no-repeat;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     &::before {
       width: 21px;
       height: 26px;
@@ -228,7 +229,7 @@
     background-repeat: no-repeat;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
 
     &::before {
       width: 33px;
@@ -258,7 +259,7 @@
     background-repeat: no-repeat;
   }
 
-  @include vp-1366 {
+  @include vp-1023 {
     &::before {
       width: 38px;
       height: 13px;
