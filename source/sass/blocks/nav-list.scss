@@ -17,7 +17,7 @@
   }
 
   @include vp-767 {
-    width: 280px;
+    width: 220px;
     font-size: 18px;
     line-height: 22px;
     margin-top: 55px;
@@ -42,6 +42,8 @@
     width: 240px;
     min-height: 50px;
     padding: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
 
     a {
       color: $color-text-black;

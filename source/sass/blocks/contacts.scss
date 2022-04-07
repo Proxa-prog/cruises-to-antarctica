@@ -62,6 +62,8 @@
   padding: 56px 0;
   font-size: 16px;
   line-height: 150%;
+  display: flex;
+  flex-wrap: wrap;
 
   p {
     font-weight: 500;
@@ -90,7 +92,7 @@
   a {
     margin-left: 28px;
     position: relative;
-    margin-right: 71px;
+    width: 100%;
 
     &::before {
       content: "";
@@ -136,6 +138,5 @@
         top: 3px;
       }
     }
-
   }
 }

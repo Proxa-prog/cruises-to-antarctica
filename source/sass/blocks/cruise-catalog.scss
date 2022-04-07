@@ -112,6 +112,32 @@
     font-size: 18px;
     line-height: 150%;
     margin: 0;
+    z-index: 1000;
+  }
+
+  &:hover {
+
+    img {
+      display: none;
+    }
+
+    dl {
+      display: inline;
+      font-weight: 400;
+    }
+
+    h3 {
+      position: static;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      margin: 0;
+      margin-bottom: 14px;
+    }
+
+    a {
+      opacity: 1;
+    }
   }
 
   @include vp-1023 {
