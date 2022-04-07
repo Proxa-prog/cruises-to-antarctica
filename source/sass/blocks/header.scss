@@ -1,22 +1,3 @@
-.header__opasity {
-  &::after {
-    opacity: 0;
-  }
-
-  @include vp-767 {
-    &::after {
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #000;
-      opacity: 0.3;
-    }
-  }
-}
-
 .header {
   margin: 0 auto;
   background-image: url("../img/content/backgrond_header_desktop.jpg");
