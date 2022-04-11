@@ -389,7 +389,7 @@ template {
   font-weight: 400;
   font-family: 'Montserrat';
   font-display: swap;
-  src: local("Montserrat"), url("/fonts/montserrat-regular.woff2") format("woff2"), url("/fonts/montserrat-regular.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
 }
 
 @font-face {
@@ -397,7 +397,7 @@ template {
   font-weight: 500;
   font-family: 'Montserrat';
   font-display: swap;
-  src: local("Montserrat"), url("/fonts/montserrat-medium.woff2") format("woff2"), url("/fonts/montserrat-medium.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-medium.woff2") format("woff2"), url("../fonts/montserrat-medium.woff") format("woff");
 }
 
 @font-face {
@@ -405,7 +405,7 @@ template {
   font-weight: 600;
   font-family: 'Montserrat';
   font-display: swap;
-  src: local("Montserrat"), url("/fonts/montserrat-semi-bold.woff2") format("woff2"), url("/fonts/montserrat-semi-bold.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-semi-bold.woff2") format("woff2"), url("../fonts/montserrat-semi-bold.woff") format("woff");
 }
 
 @font-face {
@@ -413,7 +413,7 @@ template {
   font-weight: 700;
   font-family: 'Montserrat';
   font-display: swap;
-  src: local("Montserrat"), url("/fonts/montserrat-bold.woff2") format("woff2"), url("/fonts/montserrat-bold.woff") format("woff");
+  src: local("Montserrat"), url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
 }
 
 *,
@@ -1351,6 +1351,16 @@ template {
   flex-wrap: wrap;
 }
 
+.nav-list--no-js.is-open {
+  width: 100%;
+  position: static;
+  height: 568px;
+}
+
+.nav-list--no-js.is-open .nav__button {
+  display: none;
+}
+
 .description__wrapper {
   padding: 120px 0;
   display: -webkit-box;
@@ -1585,6 +1595,7 @@ template {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
 }
 
 .cruise-catalog__item dl {
@@ -1734,7 +1745,7 @@ template {
 }
 
 .early-booking__text-wrapper {
-  width: 621px;
+  width: 690px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
@@ -1864,13 +1875,13 @@ template {
 
 .contacts__map {
   background-image: url("../img/content/map_desktop.png");
-  width: 560px;
+  width: 41vw;
   height: 306px;
   position: relative;
 }
 
 .contacts__address {
-  width: 500px;
+  width: 37vw;
   min-height: 306px;
   padding: 56px 0;
   font-size: 16px;
@@ -1927,7 +1938,7 @@ template {
 }
 
 .main__opasity::after {
-  opacity: 0;
+  background-color: rgba(0, 43, 102, 0.5);
 }
 
 .main__overflow {
@@ -2240,12 +2251,12 @@ template {
 
   .contacts__map {
     background-image: url("../img/content/map_tablet.png");
-    width: 324px;
+    width: 41vw;
     height: 335px;
   }
 
   .contacts__map iframe {
-    width: 324px;
+    max-width: 100%;
     height: 335px;
   }
 
@@ -2305,7 +2316,7 @@ template {
   }
 
   .nav {
-    width: 250px;
+    width: 285px;
     display: block;
     padding: 20px 15px 20px 15px;
   }
@@ -2401,6 +2412,7 @@ template {
 
   .promo {
     margin-top: 94px;
+    padding-bottom: 20px;
   }
 
   .promo br {
@@ -2720,8 +2732,8 @@ template {
   }
 
   .contacts__wrapper {
-    min-height: 420px;
-    padding: 40px 0 24px;
+    min-height: 388px;
+    padding: 40px 0 53px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2731,16 +2743,20 @@ template {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+    width: 90vw;
+    height: 320px;
   }
 
   .contacts__map iframe {
-    width: 290px;
-    height: 316px;
+    max-width: 100%;
+    height: 315px;
   }
 
   .contacts__address {
     padding-top: 0;
-    padding-bottom: 43px;
+    padding-bottom: 38px;
+    padding-left: 0;
+    min-height: 290px;
   }
 
   .contacts__address p {

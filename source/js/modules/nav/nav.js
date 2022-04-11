@@ -8,11 +8,11 @@ const navLi = document.querySelectorAll('.header__nav-item');
 const navOpen = () => {
   headerNavList.classList.add('nav-list--closed');
   nav.classList.remove('is-open');
+  nav.classList.remove('nav-list--no-js');
 
   document.addEventListener('click', (evt) => {
     if (navButton.classList.contains('nav__button-close')) {
       document.body.style.overflow = 'hidden';
-      // headerNavList.style.overflow = 'auto';
       if (!nav.contains(evt.target)) {
         nav.classList.remove('is-open');
         headerNavList.classList.toggle('nav-list--open');
