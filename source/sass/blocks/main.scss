@@ -1,6 +1,6 @@
 .main__opasity {
   &::after {
-    opacity: 0;
+    background-color: rgba(0, 43, 102, 0.5);;
   }
 
   @include vp-767 {

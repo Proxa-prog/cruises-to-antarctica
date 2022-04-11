@@ -78,3 +78,13 @@
     display: block;
   }
 }
+
+.nav-list--no-js.is-open {
+  width: 100%;
+  position: static;
+  height: 568px;
+
+  & .nav__button {
+    display: none;
+  }
+}
