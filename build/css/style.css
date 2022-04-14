@@ -1221,11 +1221,19 @@ template {
 }
 
 .promo h2 {
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
-  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #F9FBFD;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .promo p {
@@ -1568,8 +1576,8 @@ template {
   height: 385px;
   text-align: left;
   background-color: #011c40;
-  margin-right: 15px;
-  margin-left: 15px;
+  margin-right: 12px;
+  margin-left: 18px;
   margin-bottom: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1582,6 +1590,7 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding: 29px 26px;
 }
 
 .cruise-catalog__item::-webkit-scrollbar {
@@ -1671,34 +1680,6 @@ template {
 }
 
 .cruise-catalog__item:hover a {
-  opacity: 1;
-}
-
-.cruise-catalog__item--hover {
-  padding: 29px 26px;
-  overflow: auto;
-}
-
-.cruise-catalog__item--hover img {
-  opacity: 0;
-  height: 0;
-}
-
-.cruise-catalog__item--hover dl {
-  display: inline;
-  font-weight: 400;
-}
-
-.cruise-catalog__item--hover h3 {
-  position: static;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 150%;
-  margin: 0;
-  margin-bottom: 14px;
-}
-
-.cruise-catalog__item--hover a {
   opacity: 1;
 }
 
@@ -1856,7 +1837,7 @@ template {
   width: 18px;
   height: 18px;
   background-color: #f9fbfd;
-  left: -23px;
+  left: -19px;
 }
 
 .early-booking__form-field input[type="checkbox"]:checked + label {
@@ -1934,13 +1915,13 @@ template {
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  margin-bottom: 32px;
+  margin-bottom: 14px;
 }
 
 .contacts__address address {
   font-style: normal;
-  margin-bottom: 21px;
-  margin-left: 28px;
+  margin-bottom: 0;
+  margin-left: 33px;
   position: relative;
 }
 
@@ -1955,7 +1936,7 @@ template {
 }
 
 .contacts__address a {
-  margin-left: 28px;
+  margin-left: 33px;
   position: relative;
   width: 100%;
 }
@@ -2013,7 +1994,7 @@ template {
   }
 
   .early-booking__form-field button {
-    margin-top: 14px;
+    margin-top: 31px;
   }
 }
 
@@ -2060,6 +2041,10 @@ template {
   }
 
   .footer {
+    min-height: 120px;
+  }
+
+  .footer__nav {
     min-height: 120px;
   }
 
@@ -2268,6 +2253,7 @@ template {
   }
 
   .early-booking__form-field {
+    width: 403px;
     margin: 0 auto;
   }
 
@@ -2313,11 +2299,28 @@ template {
   }
 
   .contacts__address p {
-    margin-bottom: 30px;
+    margin-bottom: -5px;
   }
 
   .contacts__address br {
     display: inline;
+  }
+
+  .contacts__address address {
+    min-height: 48px;
+    margin-bottom: -5px;
+  }
+
+  .contacts__address address::before {
+    top: 5px;
+  }
+
+  .contacts__address a {
+    min-height: 64px;
+  }
+
+  .contacts__address a::before {
+    top: 5px;
   }
 }
 
@@ -2458,6 +2461,8 @@ template {
   .promo {
     margin-top: 94px;
     padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .promo br {
@@ -2471,7 +2476,7 @@ template {
   }
 
   .promo p {
-    font-size: 3.55vw;
+    font-size: 4.55vw;
     line-height: 140%;
   }
 
@@ -2496,7 +2501,7 @@ template {
     display: block;
     width: 100%;
     margin-top: 21px;
-    margin-bottom: 17px;
+    margin-bottom: 10px;
   }
 
   .footer__list-nav-item.nav-list__item {
@@ -2526,7 +2531,7 @@ template {
 
   .nav-list__item {
     width: 240px;
-    min-height: 50px;
+    min-height: 30px;
     padding: 10px;
     margin-bottom: 0;
     margin-top: 0;
@@ -2815,8 +2820,20 @@ template {
     margin-bottom: 27px;
   }
 
+  .contacts__address p br {
+    display: none;
+  }
+
+  .contacts__address address {
+    min-height: 69px;
+  }
+
   .contacts__address address::before {
     top: 3px;
+  }
+
+  .contacts__address a {
+    min-height: 25px;
   }
 
   .main__opasity::after {

@@ -4,21 +4,18 @@ const navButton = document.querySelector('.nav__button');
 const headerInner = document.querySelector('.header__inner');
 const mainOverlay = document.querySelector('.main');
 const navLi = document.querySelectorAll('.header__nav-item');
-const catalogItem = document.querySelectorAll('.cruise-catalog__item');
+const buttonsInCard = document.querySelectorAll(".cruise-catalog__item a")
 
 const navOpen = () => {
   headerNavList.classList.add('nav-list--closed');
   nav.classList.remove('is-open');
   nav.classList.remove('nav-list--no-js');
 
-  for(let item of catalogItem) {
-    let link = item.querySelector('a');
-
-    link.addEventListener('click', (evt) => {
-      evt.preventDefault();
-      // location.href = '#';
-    });
-  }
+Object.keys(buttonsInCard).forEach((index)=> {
+  buttonsInCard[index].addEventListener("click", (e)=>{
+      e.preventDefault()
+  });
+})
 
   document.addEventListener('click', (evt) => {
     if (navButton.classList.contains('nav__button-close')) {
