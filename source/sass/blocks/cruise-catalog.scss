@@ -43,7 +43,7 @@
   padding: 29px 26px;
 
   &::-webkit-scrollbar {
-    display: none;
+    opacity: 0;
   }
 
   img {
@@ -60,7 +60,7 @@
   }
 
   dl {
-    display: none;
+    opacity: 0;
   }
 
   a {
@@ -109,7 +109,7 @@
     }
 
     dl {
-      display: inline;
+      opacity: 1;
       font-weight: 400;
     }
 
@@ -148,7 +148,7 @@
     }
 
     & ~ dl {
-      display: inline;
+      opacity: 1;
       font-weight: 400;
     }
 
