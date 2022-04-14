@@ -8,30 +8,13 @@
   @include retina {
     background-image: url("../img/content/background_booking_desktop@2x.jpg");
   }
-
-  @include vp-1023 {
-    min-height: 805px;
-    background-image: url("../img/content/background_booking_tablet.jpg");
-
-    @include retina {
-      background-image: url("../img/content/background_booking_tablet@2x.jpg");
-    }
-  }
-
-  @include vp-767 {
-    min-height: 760px;
-    background-image: url("../img/content/background_booking_mobile.jpg");
-
-    @include retina {
-      background-image: url("../img/content/background_booking_mobile@2x.jpg");
-    }
-  }
 }
 
 .early-booking__wrapper {
   padding: 50px 60px;
   box-sizing: border-box;
   display: flex;
+  color: $color-text-black;
 
   input {
     font-size: 14px;
@@ -59,72 +42,11 @@
       display: none;
     }
   }
-
-  @include vp-1366 {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  @include vp-1023 {
-    padding: 86px 0;
-    flex-wrap: wrap;
-    text-align: center;
-
-    h3 {
-      font-size: 34px;
-      line-height: 150%;
-      margin-top: 0;
-      margin-bottom: 5px;
-    }
-
-    p {
-      .early-booking__text-space {
-        display: none;
-      }
-    }
-  }
-
-  @include vp-767 {
-    padding: 59px 0;
-
-    h3 {
-      font-size: 24px;
-      line-height: 130%;
-      margin-bottom: 14px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 140%;
-
-      br {
-        display: none;
-      }
-
-      .early-booking__text-space {
-        display: inline;
-      }
-
-      .early-booking__form-field-br {
-        display: inline;
-      }
-    }
-  }
 }
 
 .early-booking__text-wrapper {
   width: 690px;
   align-self: center;
-
-  @include vp-1023 {
-    width: 100%;
-    margin-bottom: 34px;
-  }
-
-  @include vp-767 {
-    padding: 0 10px;
-    margin-bottom: 16px;
-  }
 }
 
 .early-booking__form-field {
@@ -186,15 +108,13 @@
     margin-left: 23px;
     cursor: pointer;
 
-
-
     &::before {
       content: "";
       position: absolute;
       width: 18px;
       height: 18px;
       background-color: $color-text-white;
-      left: -23px;
+      left: -19px;
     }
   }
 
@@ -228,14 +148,57 @@
     cursor: pointer;
     user-select: none;
   }
+}
 
-  @include vp-1366 {
+@include vp-1366 {
+  .early-booking__wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .early-booking__form-field {
     button {
-      margin-top: 14px;
+      margin-top: 31px;
+    }
+  }
+}
+
+@include vp-1023 {
+  .early-booking {
+    min-height: 805px;
+    background-image: url("../img/content/background_booking_tablet.jpg");
+
+    @include retina {
+      background-image: url("../img/content/background_booking_tablet@2x.jpg");
     }
   }
 
-  @include vp-1023 {
+  .early-booking__wrapper {
+    padding: 86px 0;
+    flex-wrap: wrap;
+    text-align: center;
+
+    h3 {
+      font-size: 34px;
+      line-height: 150%;
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+
+    p {
+      .early-booking__text-space {
+        display: none;
+      }
+    }
+  }
+
+  .early-booking__text-wrapper {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+
+  .early-booking__form-field {
+    width: 403px;
     margin: 0 auto;
 
     p {
@@ -254,8 +217,51 @@
       }
     }
   }
+}
 
-  @include vp-767 {
+@include vp-767 {
+  .early-booking {
+    min-height: 760px;
+    background-image: url("../img/content/background_booking_mobile.jpg");
+
+    @include retina {
+      background-image: url("../img/content/background_booking_mobile@2x.jpg");
+    }
+  }
+
+  .early-booking__wrapper {
+    padding: 59px 0;
+
+    h3 {
+      font-size: 24px;
+      line-height: 130%;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 140%;
+
+      br {
+        display: none;
+      }
+
+      .early-booking__text-space {
+        display: inline;
+      }
+
+      .early-booking__form-field-br {
+        display: inline;
+      }
+    }
+  }
+
+  .early-booking__text-wrapper {
+    padding: 0 10px;
+    margin-bottom: 16px;
+  }
+
+  .early-booking__form-field {
     min-height: 460px;
     padding: 36px 30px;
     width: 100%;

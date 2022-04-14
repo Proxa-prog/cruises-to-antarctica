@@ -18,8 +18,18 @@
     height: 38px;
     fill: $color-text-white;
   }
+}
 
-  @include vp-1023 {
+.nav__button-close {
+  display: none;
+}
+
+.nav__button {
+  display: none;
+}
+
+@include vp-1023 {
+  .nav {
     min-height: 82px;
 
     a {
@@ -31,8 +41,10 @@
       height: 22px;
     }
   }
+}
 
-  @include vp-767 {
+@include vp-767 {
+  .nav {
     width: 285px;
     display: block;
     padding: 20px 15px 20px 15px;
@@ -44,10 +56,8 @@
       left: 5%;
     }
   }
-}
 
-.is-open {
-  @include vp-767 {
+  .is-open {
     background-color: $color-text-white;
     position: fixed;
     right: 0;
@@ -67,12 +77,8 @@
       display: block;
     }
   }
-}
 
-.nav__button-close {
-  display: none;
-
-  @include vp-767 {
+  .nav__button-close {
     background-color: inherit;
     display: block;
     border: none;
@@ -104,12 +110,8 @@
       background-color: $color-text-black;
     }
   }
-}
 
-.nav__button {
-  display: none;
-
-  @include vp-767 {
+  .nav__button {
     cursor: pointer;
     background-color: inherit;
     display: block;

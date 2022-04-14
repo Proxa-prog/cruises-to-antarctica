@@ -4,10 +4,6 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 562px;
-
-  @include vp-1023 {
-    min-height: 588px;
-  }
 }
 
 .advantages__wrapper {
@@ -19,23 +15,6 @@
     font-weight: 600;
     font-size: 28px;
     line-height: 150%;
-  }
-
-  @include vp-1023 {
-    padding: 90px 0;
-
-    h2 {
-      font-size: 26px;
-    }
-  }
-
-  @include vp-767 {
-    padding: 62px 0 38px;
-
-    h2 {
-      font-size: 24px;
-      margin-bottom: 29px;
-    }
   }
 }
 
@@ -83,8 +62,93 @@
   .advantages__zodiac {
     line-height: 140%;
   }
+}
 
-  @include vp-1023 {
+.advantages__item-zodiac {
+  p {
+    br {
+      display: inline;
+    }
+
+    .advantages__item-zodiac-br-1 {
+      display: none;
+    }
+  }
+}
+
+.advantages__item-all-inclusive {
+  p {
+    br {
+      display: inline;
+    }
+
+    .advantages__item-all-inclusive-br1,
+    .advantages__item-all-inclusive-br2,
+    .advantages__item-all-inclusive-br3 {
+      display: none;
+    }
+  }
+}
+
+.advantages__a-cruise-ship {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 32px;
+    background-image: url("../img/svg/ship.svg");
+    background-size: contain;
+    top: -48px;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__all-inclusive {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 21px;
+    background-image: url("../img/svg/double_ok.svg");
+    background-size: contain;
+    top: -42px;
+    background-repeat: no-repeat;
+  }
+}
+
+.advantages__zodiac {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 15px;
+    background-image: url("../img/svg/boat.svg");
+    background-size: contain;
+    top: -42px;
+    background-repeat: no-repeat;
+  }
+}
+
+@include vp-1023 {
+  .advantages {
+    min-height: 588px;
+  }
+
+  .advantages__wrapper {
+    padding: 90px 0;
+
+    h2 {
+      font-size: 26px;
+    }
+  }
+
+  .advantages__item {
     width: 206px;
     min-height: 310px;
     padding: 75px 11px 18px 24px;
@@ -104,7 +168,49 @@
     }
   }
 
-  @include vp-767 {
+  .advantages__item-all-inclusive {
+    p {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .advantages__a-cruise-ship {
+    &::before {
+      width: 21px;
+      height: 26px;
+    }
+  }
+
+  .advantages__all-inclusive {
+    &::before {
+      width: 33px;
+      height: 19px;
+    }
+  }
+
+  .advantages__zodiac {
+    &::before {
+      width: 38px;
+      height: 13px;
+    }
+  }
+
+
+}
+
+@include vp-767 {
+  .advantages__wrapper {
+    padding: 62px 0 38px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 29px;
+    }
+  }
+
+  .advantages__item {
     width: 290px;
     min-height: 249px;
     margin: 0 auto;
@@ -121,22 +227,9 @@
       }
     }
   }
-}
 
-.advantages__item-zodiac {
-  p {
-    br {
-      display: inline;
-    }
-
-    .advantages__item-zodiac-br-1 {
-      display: none;
-    }
-  }
-
-  @include vp-767 {
+  .advantages__item-zodiac {
     p {
-
       br {
         display: none;
       }
@@ -150,30 +243,8 @@
       }
     }
   }
-}
 
-.advantages__item-all-inclusive {
-  p {
-    br {
-      display: inline;
-    }
-
-    .advantages__item-all-inclusive-br1,
-    .advantages__item-all-inclusive-br2,
-    .advantages__item-all-inclusive-br3 {
-      display: none;
-    }
-  }
-
-  @include vp-1023 {
-    p {
-      br {
-        display: none;
-      }
-    }
-  }
-
-  @include vp-767 {
+  .advantages__item-all-inclusive {
     p {
       br {
         display: inline;
@@ -184,89 +255,22 @@
       }
     }
   }
-}
 
-.advantages__a-cruise-ship {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 27px;
-    height: 32px;
-    background-image: url("../img/svg/ship.svg");
-    background-size: contain;
-    top: -48px;
-    background-repeat: no-repeat;
-  }
-
-  @include vp-1023 {
+  .advantages__a-cruise-ship {
     &::before {
       width: 21px;
       height: 26px;
     }
   }
 
-  @include vp-767 {
-    &::before {
-      width: 21px;
-      height: 26px;
-    }
-  }
-}
-
-.advantages__all-inclusive {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 38px;
-    height: 21px;
-    background-image: url("../img/svg/double_ok.svg");
-    background-size: contain;
-    top: -42px;
-    background-repeat: no-repeat;
-  }
-
-  @include vp-1023 {
-
+  .advantages__all-inclusive {
     &::before {
       width: 33px;
       height: 19px;
     }
   }
 
-  @include vp-767 {
-    &::before {
-      width: 33px;
-      height: 19px;
-    }
-  }
-}
-
-.advantages__zodiac {
-  position: relative;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 45px;
-    height: 15px;
-    background-image: url("../img/svg/boat.svg");
-    background-size: contain;
-    top: -42px;
-    background-repeat: no-repeat;
-  }
-
-  @include vp-1023 {
-    &::before {
-      width: 38px;
-      height: 13px;
-    }
-  }
-
-  @include vp-767 {
+  .advantages__zodiac {
     &::before {
       width: 38px;
       height: 13px;
