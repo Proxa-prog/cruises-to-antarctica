@@ -1234,6 +1234,7 @@ template {
   align-items: center;
   color: #F9FBFD;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 0;
 }
 
 .promo p {
@@ -1412,14 +1413,11 @@ template {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 562px;
-}
-
-.advantages__wrapper {
-  padding: 110px 0;
   text-align: center;
+  padding: 110px 0;
 }
 
-.advantages__wrapper h2 {
+.advantages h2 {
   margin: 0;
   font-weight: 600;
   font-size: 28px;
@@ -1445,8 +1443,7 @@ template {
   min-height: 241px;
   background-color: #f9fbfd;
   padding: 80px 34px 0 30px;
-  margin: auto;
-  margin-top: 49px;
+  margin: 49px 20px 0 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: left;
@@ -1482,7 +1479,10 @@ template {
   display: inline;
 }
 
-.advantages__item-zodiac p .advantages__item-zodiac-br-1 {
+.advantages__item-zodiac p .advantages__item-zodiac-br-1,
+.advantages__item-zodiac p .advantages__zodiac-br-tablet,
+.advantages__item-zodiac p .advantages__item-zodiac-br-2,
+.advantages__item-zodiac p .advantages__item-zodiac-br-3 {
   display: none;
 }
 
@@ -1659,7 +1659,7 @@ template {
 }
 
 .cruise-catalog__item:hover {
-  padding: 29px 25px;
+  padding: 27px 9px 36px 25px;
   overflow: auto;
 }
 
@@ -1678,7 +1678,7 @@ template {
   font-size: 18px;
   line-height: 150%;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 1px;
 }
 
 .cruise-catalog__item:hover a {
@@ -1840,7 +1840,7 @@ template {
   width: 18px;
   height: 18px;
   background-color: #f9fbfd;
-  left: -19px;
+  left: -23px;
 }
 
 .early-booking__form-field input[type="checkbox"]:checked + label {
@@ -1998,7 +1998,7 @@ template {
   }
 
   .early-booking__form-field button {
-    margin-top: 31px;
+    margin-top: 11px;
   }
 }
 
@@ -2150,13 +2150,10 @@ template {
 
   .advantages {
     min-height: 588px;
-  }
-
-  .advantages__wrapper {
     padding: 90px 0;
   }
 
-  .advantages__wrapper h2 {
+  .advantages h2 {
     font-size: 26px;
   }
 
@@ -2164,6 +2161,7 @@ template {
     width: 206px;
     min-height: 310px;
     padding: 75px 11px 18px 24px;
+    margin: 49px 15px 11px;
   }
 
   .advantages__item h3 {
@@ -2176,6 +2174,15 @@ template {
 
   .advantages__item p br {
     display: none;
+  }
+
+  .advantages__item p .advantages__cruise-chip-br,
+  .advantages__item p .advantages__cruise-chip-br1,
+  .advantages__item p .advantages__item-all-inclusive-br3,
+  .advantages__item p .advantages__zodiac-br-tablet,
+  .advantages__item p .advantages__item-zodiac-br-2,
+  .advantages__item p .advantages__item-zodiac-br-3 {
+    display: inline;
   }
 
   .advantages__item-all-inclusive p br {
@@ -2225,7 +2232,11 @@ template {
   }
 
   .cruise-catalog__item:hover {
-    padding: 27px 39px;
+    padding: 27px 35px 37px 35px;
+  }
+
+  .cruise-catalog__item:hover dl {
+    margin-top: 12px;
   }
 
   .early-booking {
@@ -2259,6 +2270,11 @@ template {
   .early-booking__form-field {
     width: 403px;
     margin: 0 auto;
+    padding: 44px 47px 44px 53px;
+  }
+
+  .early-booking__form-field button {
+    margin-top: 31px;
   }
 
   .early-booking__form-field p {
@@ -2480,7 +2496,7 @@ template {
   }
 
   .promo p {
-    font-size: 4.55vw;
+    font-size: 4.95vw;
     line-height: 140%;
   }
 
@@ -2510,6 +2526,7 @@ template {
 
   .footer__list-nav-item.nav-list__item {
     padding: 0;
+    min-height: 30px;
   }
 
   .footer__list-nav-item.nav-list__item a {
@@ -2535,7 +2552,7 @@ template {
 
   .nav-list__item {
     width: 240px;
-    min-height: 30px;
+    min-height: 50px;
     padding: 10px;
     margin-bottom: 0;
     margin-top: 0;
@@ -2596,11 +2613,11 @@ template {
     margin: 0 auto;
   }
 
-  .advantages__wrapper {
+  .advantages {
     padding: 62px 0 38px;
   }
 
-  .advantages__wrapper h2 {
+  .advantages h2 {
     font-size: 24px;
     margin-bottom: 29px;
   }
@@ -2619,6 +2636,15 @@ template {
 
   .advantages__item p br {
     display: inline;
+  }
+
+  .advantages__item p .advantages__cruise-chip-br,
+  .advantages__item p .advantages__cruise-chip-br1,
+  .advantages__item p .advantages__item-all-inclusive-br3,
+  .advantages__item p .advantages__zodiac-br-tablet,
+  .advantages__item p .advantages__item-zodiac-br-2,
+  .advantages__item p .advantages__item-zodiac-br-3 {
+    display: none;
   }
 
   .advantages__item-zodiac p br {
@@ -2676,7 +2702,7 @@ template {
   }
 
   .cruise-catalog__item:hover {
-    padding: 29px 26px;
+    padding: 29px 24px 34px 25px;
   }
 
   .cruise-catalog__item:hover img {
